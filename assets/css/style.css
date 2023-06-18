@@ -1,12 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+body {
+    font-family: Righteous, sans-serif;
+}
+
+#game-container {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
 .icons {
     margin: 20px;
-    font-size: xx-large;
+
+    line-height: 50px;
+    font-size: 30px;
 }
 
 #icon-container {
     padding-left: 20%;
 }
 
-#head-name {
-    padding-left: 20%;
+.icons:hover {
+    font-size: 40px;
+}
+
+#user-selection {
+    width: 100%;
+    margin: auto;
 }
