@@ -1,31 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 body {
+    background-image: url(../images/galaxy-3607885_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: Righteous, sans-serif;
+    color: aliceblue;
 }
 
 #game-container {
-    display: block;
-    width: 50%;
+    width: 60%;
     margin: auto;
+
+}
+
+#result-display {
+    width: 33%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+p {
+    font-size: xx-large;
+    margin-top: 50px;
 }
 
 .icons {
-    margin: 20px;
+    width: 100px;
+    height: 60px;
+    font-size: larger;
+    background-color: aqua;
 
-    line-height: 50px;
-    font-size: 30px;
 }
 
-#icon-container {
-    padding-left: 20%;
-}
-
-.icons:hover {
-    font-size: 40px;
+.icons:active {
+    background-color: #ce6d6d;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 #user-selection {
-    width: 100%;
-    margin: auto;
+    margin-top: 50px;
+
+}
+
+#cpu-selection {
+    margin-top: 50px;
 }
