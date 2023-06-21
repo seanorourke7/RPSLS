@@ -1,7 +1,6 @@
-
-
-let userInput = document.getElementsByTagName("game-container");
-if (this.id === "rock")
-    console.log("i work");
+let rock = document.getElementById("rock");
+rock.addEventListener("click", function () {
+    alert("working");
+});
 
 
