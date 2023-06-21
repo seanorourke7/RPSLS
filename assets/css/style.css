@@ -13,6 +13,7 @@ body {
     width: 60%;
     margin: auto;
     text-align: center;
+    padding-top: 50px;
 
 }
 
@@ -26,23 +27,23 @@ body {
 }
 
 #rock {
-    background-image: url("../images/rock4.png");
+    background-image: url("../images/rock.png");
 }
 
 #paper {
-    background-image: url("../images/paper1.png");
+    background-image: url("../images/paper.webp");
 }
 
 #scissors {
-    background-image: url("../images/scissors1.png")
+    background-image: url("../images/scissors.webp")
 }
 
 #lizard {
-    background-image: url("../images/lizard1.png")
+    background-image: url("../images/lizard1.jpg")
 }
 
 #spock {
-    background-image: url("../images/spock.png")
+    background-image: url("../images/spock.jpg")
 }
 
 p {
