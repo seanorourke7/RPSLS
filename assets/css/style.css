@@ -66,6 +66,25 @@ body {
     text-align: center;
 }
 
+#returnGamePage {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#header {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#howToPlay {
+    width: 200px;
+    height: 150px;
+    background-color: aqua;
+    font-family: Righteous, sans-serif;
+    font-size: x-large;
+    border-radius: 10px;
+}
+
 /*changes size for smaller screens*/
 
 @media screen and (max-width: 750px) {
@@ -74,18 +93,17 @@ body {
         height: 50px
     }
 
-    iframe {
-        width: 200px;
-        height: 100px;
-        ;
-    }
-
     h1 {
         font-size: smaller;
     }
 
     .game-container {
         padding-top: 0;
+    }
+
+    #howToPlay {
+        width: 100px;
+        height: 75px;
     }
 
 
