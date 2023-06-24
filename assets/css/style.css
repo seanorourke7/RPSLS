@@ -9,7 +9,7 @@ body {
     text-align: center;
 }
 
-#game-container {
+.game-container {
     width: 60%;
     margin: auto;
     text-align: center;
@@ -85,9 +85,9 @@ p {
         height: 50px
     }
 
-    .video {
-        width: 150px;
-        height: 75px;
+    iframe {
+        width: 200px;
+        height: 100px;
         ;
     }
 }
