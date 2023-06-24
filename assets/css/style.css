@@ -17,12 +17,6 @@ body {
 
 }
 
-#result-display {
-    margin: 50px;
-}
-
-
-
 #rock {
     background-image: url("../images/rock.png");
 }
@@ -90,4 +84,14 @@ p {
         height: 100px;
         ;
     }
+
+    h1 {
+        font-size: smaller;
+    }
+
+    .game-container {
+        padding-top: 0;
+    }
+
+    
 }
