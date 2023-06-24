@@ -21,10 +21,27 @@ function cpuTile() {
 
 }
 
+
 function checkAnswer() {
     let userChoice = document.getElementById("result-display").innerHTML;
     let aiChoice = document.getElementById("cpu-display").innerHTML;
+    let rock = '<button class="icons" id="rock" type="submit"></button>';
+    let paper = '<button class="icons" id="paper" type="submit"></button>';
+    let scissors = '<button class="icons" id="scissors" type="submit"></button>';
+    let lizard = '<button class="icons" id="lizard" type="submit"></button>';
+    let spock = '<button class="icons" id="spock" type="submit"></button>';
+
     if (userChoice === aiChoice) {
         alert("DRAW");
     }
+    else if (userChoice === rock && aiChoice === paper) {
+        alert("You Lose");
+    }
+    else if (userChoice === rock && aiChoice === scissors) {
+        alert("You Win");
+    }
+    else if (userChoice === rock && aiChoice === lizard) {
+        alert("You Win");
+    }
+
 }
