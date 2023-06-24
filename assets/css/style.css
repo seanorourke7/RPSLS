@@ -21,6 +21,13 @@ body {
 
 }
 
+.swal-height {
+    height: 200px;
+    width: 200px;
+    font-size: 10px;
+    
+}
+
 #result-container {
     margin: auto;
     text-align: center;
