@@ -1,3 +1,7 @@
+
+/*Loops through the game options and labels them as gameTiles. 
+This uses the "id" attribute to identify which tile has been selected by the user. */
+
 let gameType = document.getElementsByClassName("icons");
 for (let gameTile of gameType) {
     gameTile.addEventListener("click", function () {
@@ -9,9 +13,14 @@ for (let gameTile of gameType) {
 
 };
 
+/*This funtion will take the user selection and place it in the user selected button.
+It will then be compared with the CPU choice.*/
+
 function displayBox(selectedIcon) {
     document.getElementById("result-display").innerHTML = `<button class="icons" id=${selectedIcon} type="submit"></button>`;
 }
+
+// This will generate a random choice for the CPU
 
 function cpuTile() {
     let tileArray = ["rock", "paper", "scissors", "lizard", "spock"];
@@ -21,6 +30,8 @@ function cpuTile() {
 
 }
 
+/*This function will check the User answer 
+and compare it to the CPU's random answer and display an alert based on the outcome*/
 
 function checkAnswer() {
     let userChoice = document.getElementById("result-display").innerHTML;
@@ -34,7 +45,7 @@ function checkAnswer() {
     if (userChoice === aiChoice) {
         setTimeout(function () {
             Swal.fire({
-                icon: 'info', title: "DRAW", width: 250, showConfirmButton: false,
+                icon: 'info', title: "DRAW", width: 200, showConfirmButton: false,
                 timer: 1500
             });
         }, 500);

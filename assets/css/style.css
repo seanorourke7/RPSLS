@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+/*sets the background image, font, and color.*/
+
 body {
     background-image: url(../images/galaxy-3607885_1920.jpg);
     background-position: center;
@@ -9,6 +11,8 @@ body {
     text-align: center;
 }
 
+/* sets the styles of the user choice and the game outcome tiles*/
+
 .game-container {
     width: 60%;
     margin: auto;
@@ -16,6 +20,8 @@ body {
     padding-top: 50px;
 
 }
+
+/*below sets the images that populate the game buttons*/
 
 #rock {
     background-image: url("../images/rock.png");
@@ -37,10 +43,7 @@ body {
     background-image: url("../images/spock.jpg")
 }
 
-p {
-    font-size: xx-large;
-    margin-top: 50px;
-}
+/*set the styles of the individual icons*/
 
 .icons {
     width: 150px;
@@ -57,23 +60,15 @@ p {
 
 }
 
-#user-selection {
-    margin-top: 50px;
-
-}
-
-
-#cpu-selection {
-    margin-top: 50px;
-}
-
-
+/*move the youtube clip to the center of the screen*/
 
 .video {
     text-align: center;
 }
 
-@media screen and (max-width: 350px) {
+/*changes size for smaller screens*/
+
+@media screen and (max-width: 750px) {
     .icons {
         width: 75px;
         height: 50px
@@ -93,5 +88,5 @@ p {
         padding-top: 0;
     }
 
-    
+
 }
