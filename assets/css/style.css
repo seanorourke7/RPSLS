@@ -13,12 +13,18 @@ body {
 
 /* sets the styles of the user choice and the game outcome tiles*/
 
-.game-container {
+#game-container {
     width: 60%;
     margin: auto;
     text-align: center;
     padding-top: 25px;
 
+}
+
+#result-container {
+    margin: auto;
+    text-align: center;
+    padding-top: 25px;
 }
 
 /*below sets the images that populate the game buttons*/
