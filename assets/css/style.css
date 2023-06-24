@@ -125,5 +125,13 @@ body {
         font-size: 20px;
     }
 
+    #result-display {
+        margin: 0;
+    }
+
+    #cpu-display {
+        margin: 0;
+    }
+
 
 }
