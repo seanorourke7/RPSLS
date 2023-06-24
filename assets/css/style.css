@@ -17,7 +17,7 @@ body {
     width: 60%;
     margin: auto;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 25px;
 
 }
 
@@ -60,6 +60,20 @@ body {
 
 }
 
+#result-display {
+    margin-right: 30px;
+}
+
+#cpu-display {
+    margin-left: 30px;
+}
+
+#centerText {
+    font-size: 40px;
+    color: black;
+
+}
+
 /*move the youtube clip to the center of the screen*/
 
 .video {
@@ -83,6 +97,7 @@ body {
     font-family: Righteous, sans-serif;
     font-size: x-large;
     border-radius: 10px;
+    margin-top: 20px;
 }
 
 /*changes size for smaller screens*/
@@ -104,6 +119,10 @@ body {
     #howToPlay {
         width: 100px;
         height: 75px;
+    }
+
+    #centerText {
+        font-size: 20px;
     }
 
 
