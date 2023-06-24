@@ -32,67 +32,72 @@ function checkAnswer() {
     let spock = '<button class="icons" id="spock" type="submit"></button>';
 
     if (userChoice === aiChoice) {
-        setTimeout(function () { Swal.fire("DRAW"); }, 500);
+        setTimeout(function () {
+            Swal.fire({
+                icon: 'info',
+                title: "DRAW"
+            });
+        }, 500);
     }
     else if (userChoice === rock && aiChoice === paper) {
-        setTimeout(function () { Swal.fire("You Lose", "Paper Covers Rock"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'error', title: "You Lose", text: "Paper Covers Rock" }); }, 500);
     }
     else if (userChoice === rock && aiChoice === spock) {
-        setTimeout(function () { Swal.fire("You Lose", "Spock Vaporises Rock"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'error', title: "You Lose", text: "Spock Vaporises Rock" }); }, 500);
     }
     else if (userChoice === rock && aiChoice === lizard) {
-        setTimeout(function () { Swal.fire("You Win", "Rock Crushes Lizard"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'success', title: "You Win", text: "Rock Crushes Lizard" }); }, 500);
     }
     else if (userChoice === rock && aiChoice === scissors) {
-        setTimeout(function () { Swal.fire("You Win", "Rock Crushes Scissors"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'success', title: "You Win", text: "Rock Crushes Scissors" }); }, 500);
     }
     else if (userChoice === paper && aiChoice === rock) {
-        setTimeout(function () { Swal.fire("You Win", "Paper Covers Rock"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'success', title: "You Win", text: "Paper Covers Rock" }); }, 500);
     }
     else if (userChoice === paper && aiChoice === lizard) {
-        setTimeout(function () { Swal.fire("You Lose", "Lizard Eats Paper"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'error', title: "You Lose", text: "Lizard Eats Paper" }); }, 500);
     }
     else if (userChoice === paper && aiChoice === scissors) {
-        setTimeout(function () { Swal.fire("You Lose", "Scissors Cuts Paper"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'error', title: "You Lose", text: "Scissors Cuts Paper" }); }, 500);
     }
     else if (userChoice === paper && aiChoice === spock) {
-        setTimeout(function () { Swal.fire("You Win", "Paper Disproves Spock"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'success', title: "You Win", text: "Paper Disproves Spock" }); }, 500);
     }
     else if (userChoice === scissors && aiChoice === rock) {
-        setTimeout(function () { Swal.fire("You Lose", "Rock Crushes Scissors"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'error', title: "You Lose", text: "Rock Crushes Scissors" }); }, 500);
     }
     else if (userChoice === scissors && aiChoice === lizard) {
-        setTimeout(function () { Swal.fire("You Win", "Scissors Decapitates Lizard"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'success', title: "You Win", text: "Scissors Decapitates Lizard" }); }, 500);
     }
     else if (userChoice === scissors && aiChoice === paper) {
-        setTimeout(function () { Swal.fire("You Win", "Scissors Cuts Paper"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'success', title: "You Win", text: "Scissors Cuts Paper" }); }, 500);
     }
     else if (userChoice === scissors && aiChoice === spock) {
-        setTimeout(function () { Swal.fire("You Lose", "Spock Smashes Scissors"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'error', title: "You Lose", text: "Spock Smashes Scissors" }); }, 500);
     }
     else if (userChoice === lizard && aiChoice === rock) {
-        setTimeout(function () { Swal.fire("You Lose", "Rock Crushes Lizard"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'error', title: "You Lose", text: "Rock Crushes Lizard" }); }, 500);
     }
     else if (userChoice === lizard && aiChoice === scissors) {
-        setTimeout(function () { Swal.fire("You Lose", "Scissors Decapitates Lizard"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'error', title: "You Lose", text: "Scissors Decapitates Lizard" }); }, 500);
     }
     else if (userChoice === lizard && aiChoice === paper) {
-        setTimeout(function () { Swal.fire("You Win", "Lizard Eats Paper"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'success', title: "You Win", text: "Lizard Eats Paper" }); }, 500);
     }
     else if (userChoice === lizard && aiChoice === spock) {
-        setTimeout(function () { Swal.fire("You Win", "Lizard Poisons Spock"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'success', title: "You Win", text: "Lizard Poisons Spock" }); }, 500);
     }
     else if (userChoice === spock && aiChoice === rock) {
-        setTimeout(function () { Swal.fire("You Win", "Spock Vaporises Rock"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'success', title: "You Win", text: "Spock Vaporises Rock" }); }, 500);
     }
     else if (userChoice === spock && aiChoice === scissors) {
-        setTimeout(function () { Swal.fire("You Win", "Spock Smashes Scissors"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'success', title: "You Win", text: "Spock Smashes Scissors" }); }, 500);
     }
     else if (userChoice === spock && aiChoice === paper) {
-        setTimeout(function () { Swal.fire("You Lose", "Paper Disproves Spock"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'error', title: "You Lose", text: "Paper Disproves Spock" }); }, 500);
     }
     else if (userChoice === spock && aiChoice === lizard) {
-        setTimeout(function () { Swal.fire("You Lose", "Lizard Poisons Spock"); }, 500);
+        setTimeout(function () { Swal.fire({ icon: 'error', title: "You Lose", text: "Lizard Poisons Spock" }); }, 500);
     }
 
 
