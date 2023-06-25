@@ -17,7 +17,7 @@ body {
     width: 60%;
     margin: auto;
     text-align: center;
-    padding-top: 25px;
+
 
 }
 
@@ -96,11 +96,22 @@ body {
 #returnGamePage {
     text-decoration: none;
     color: aliceblue;
+    padding-top: 75px;
+    font-size: 50px;
 }
 
-#header {
+.headerLogo {
     text-decoration: none;
     color: aliceblue;
+    font-size: 50px;
+}
+
+#chooseWeapon {
+    font-size: 30px;
+}
+
+.headerHowToPlay {
+    padding: 75px;
 }
 
 #howToPlay {
@@ -119,6 +130,19 @@ body {
     .icons {
         width: 75px;
         height: 50px
+    }
+
+    .headerLogo {
+        font-size: 30px;
+    }
+
+    #returnGamePage {
+        font-size: 30px;
+    }
+
+    iframe {
+        width: 300px;
+        height: 150px;
     }
 
     h1 {
