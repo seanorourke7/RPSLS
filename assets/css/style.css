@@ -17,15 +17,12 @@ body {
     width: 60%;
     margin: auto;
     text-align: center;
-
-
 }
 
 .swal-height {
     height: 200px;
     width: 200px;
     font-size: 10px;
-
 }
 
 #result-container {
@@ -70,7 +67,6 @@ body {
 .icons:active {
     background-color: #ce6d6d;
     box-shadow: 0 5px #666;
-
 }
 
 #result-display {
@@ -84,7 +80,6 @@ body {
 #centerText {
     font-size: 40px;
     color: white;
-
 }
 
 /*move the youtube clip to the center of the screen*/
@@ -145,10 +140,6 @@ body {
         height: 150px;
     }
 
-    h1 {
-        font-size: smaller;
-    }
-
     .game-container {
         padding-top: 0;
     }
@@ -171,4 +162,28 @@ body {
     }
 
 
+}
+
+/* Wave effect code sourced from https: //alvarotrigo.com/blog/css-text-animations/ */
+
+.waviy {
+    position: relative;
+}
+
+.waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
 }
