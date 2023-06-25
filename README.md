@@ -4,7 +4,7 @@ This site is to host a game called Rock Paper Scissors Lizard Spock. This game w
 
 I built it to demonstrate the abilities i have learned so far, and for course evaluation.
 
-This is a multi page site with links to each page. It contains a Home, Game, and a How to Play page.
+This is a multi page site with links to each page. It contains a Home, Game, How to Play (with video) and How to Play with text pages.
 
 The site is responsive across different screen sizes.
 
@@ -63,6 +63,8 @@ Both buttons react on hover to invite ineraction.
 
 The 'How to Play' page has a video embedded that explains the rules of the game. Underneath the video is a link "back to the game" which redirects the user to the game. The header links back to the homepage.
 
+If for any reason the video doesn't load or isn't used there is a 'text instructions' button underneath the video that opens a new page with text instructions on how the game works.
+
 The Game page is laid out in an intuitive way with five buttons representing the users choice and animated text inviting the user to 'Choose a Weapon'.
 
 Once the user interacts with the game and 'Chooses a Weapon' the cpu will automatically generate a counter weapon. Both weapons are displayed side by side above the buttons. An alert will let the user know if they have won, lost or drawn. This alert also explains the reason ie:"Rock crushes Scissors".
@@ -118,6 +120,10 @@ A How to Play page with a video embedded that explains the rules.
 
 ![HowToPlay mobile](/assets/images/readme/mobileHowtoplay.png)
 
+A how to play page with text explaining the rules.
+
+![How to play desktop](/assets/images/readme/textInstructions.png)
+
 ### General features on each page
 
 There is a header that is consitant across the site and in the 'Game' and 'How to Play' pages it contains a link back to the home page.
@@ -131,7 +137,7 @@ I would like to add some sounds that interact with the user to later versions.
 
 ### Accessibility
 
-All images have aria labels with descriptive text.
+All buttons with images have aria labels with descriptive text.
 The font and colour scheme work well and accessability on lighthouse is 100%.
 ![Lighthouse](/assets/images/readme/lighthouse.png)
 
@@ -140,14 +146,14 @@ The font and colour scheme work well and accessability on lighthouse is 100%.
 Github - To save and store the files for the website.
 Codeanywhere - to write the code.
 Google Fonts - To import the fonts used on the website.
-SweetAlerts2 - for the alert boxes. 
+SweetAlerts2 - for the alert boxes.
 Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
 Tiny PNG To compress images.
 Am I Responsive? To show the website image on a range of devices.
 
 ### Languages Used
 
-HTML & CSS & JS.
+HTML & CSS & JavaScript.
 
 ### Deployment
 
@@ -186,53 +192,69 @@ Type 'git clone' into the terminal and then paste the link you copied in step 3.
 
 Testing was ongoing throughout the entire build. I utilised Chrome developer tools while building to pinpoint and troubleshoot any issues as I went along.
 
-The following feedback was raised during my mid project meeting with my mentor:
+I didn't manage to make an any appointments with my Mentor for this project but I was able to troubleshoot on slack and through general google searches.
 
 Bugs
 
-When sizing down to mobile the 3 columns in the gallery were too small to see so I changed the media queries to 2 columns below 750px.
-Initally the contact form was 10% from the left and this caused an issue with the flow of the page when viewed on mobile so i changed it to 1%.
-The images initially would display fine on the live site but not in the working environment of codeanywhere. I had to change the address to all images so they would display on both.
+When checking Javascript Validators I got several errors referencing the use of 'let' to declare a variable. I changed these to 'var'.
 
-When i first ran throught the W3C validator it found that I had one div that didn't have a closing tag. This was easily rectified.
+I also got an error about declaring a 'var' outside a funtion which led me to realise that I had the game start without listening for the DOM to be loaded and the initial code was not written into an enclosed fuction. So I re-wrote the initial code into a function that listens for the DOM to be loaded.
+
+There is an error appearing around using 'template literal syntax' as its not available in versions before 2015 but I left these as I don't have an alternative fix and the issue will only appear on versions before 2015.
+
+There is an error that the 'Swal' is not defined. I have't fixed this yet.
 
 No bugs were identified in HTML or CSS validators.
 
-![Jigsaw](assets/images/readme/jigsaw-validator.png)
+![Jigsaw](/assets/images/readme/cssValid.png)
 
-![W3C](assets/images/readme/w3c-validator.png)
-
-![PageSpeed](assets/images/readme/pagespeed.png)
+![W3C](assets/images/readme/htmlValid.png)
 
 ## Credits
 
-Most of what I learned for this project came from the love-running project from code institute.
-I have recieved help and feedback particularly around the thank you page from Graeme Taylor my mentor.
+Most of what I learned for this project came from the Love-Maths project from code institute.
+I used slack, youtube and other online resources to help with some code specifics.
 
 ### Code Used
 
-I re-used code from the love running project for the gallery styling.
-#pictures {
-clear: both;
-line-height: 0;
-column-count: 3;
-column-gap: 0px;
+I used code for the Wave effect on 'Choose Your Weapon' from https: //alvarotrigo.com/blog/css-text-animations.
+.waviy {
+position: relative;
+}
+
+.waviy span {
+position: relative;
+display: inline-block;
+font-size: 20px;
+color: #fff;
+text-transform: uppercase;
+animation: flip 2s infinite;
+animation-delay: calc(.2s \* var(--i))
+}
+
+@keyframes flip {
+
+    0%,
+    80% {
+        transform: rotateY(360deg)
+    }
+
 }
 
 ### Content
 
-The site was written by me and is entirely fictional.
+The site was written by me and is for educational purposes only.
 
 ###  Media
 
-All images used are copyright free from www.pexels.com.
+All images were edited by me to fit the color scheme and were sourced from google images.
 
 ###  Acknowledgments
 
-Graeme Taylor my mentor helped me a lot with this project and I got some feedback from Alan B. the cohort facilitator with code institute around the wording used in the header. Originaly it was "ABOUT" but I later changed it to "HOME".
+I didn't have a chance to have a mentor session for this project but I did manage to get on a couple of the weekly meetups on slack which helps to motivate and keep me working through any issues.
 The readme template was used from code insitute.
 And the Slack community for this project is a great help for community discorse and feedback.
 
-https://seanorourke7.github.io/rjphotography/
+https://seanorourke7.github.io/RPSLS/
 
 ---

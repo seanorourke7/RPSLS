@@ -129,6 +129,10 @@ body {
     color: red;
 }
 
+#textInstructions {
+    font-size: 20px;
+}
+
 /*changes size for smaller screens*/
 
 @media screen and (max-width: 750px) {
