@@ -3,7 +3,7 @@
 /*sets the background image, font, and color.*/
 
 body {
-    background-image: url(../images/galaxy-3607885_1920.jpg);
+    background-image: url(../images/Orion.jpg);
     background-position: center;
     background-repeat: repeat-y;
     font-family: Righteous, sans-serif;
@@ -17,6 +17,7 @@ body {
     width: 60%;
     margin: auto;
     text-align: center;
+    padding-top: 25px;
 }
 
 .swal-height {
@@ -29,6 +30,7 @@ body {
     margin: auto;
     text-align: center;
     padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 /*below sets the images that populate the game buttons*/
@@ -91,7 +93,6 @@ body {
 #returnGamePage {
     text-decoration: none;
     color: aliceblue;
-    padding-top: 75px;
     font-size: 50px;
 }
 
@@ -101,15 +102,16 @@ body {
     font-size: 50px;
 }
 
-#chooseWeapon {
-    font-size: 30px;
+.headerHowToPlay {
+    margin-top: 75px;
+    margin-bottom: 75px;
 }
 
-.headerHowToPlay {
+.headerPadding {
     padding: 75px;
 }
 
-#howToPlay {
+.homeIcons {
     width: 200px;
     height: 150px;
     background-color: aqua;
@@ -125,6 +127,10 @@ body {
     .icons {
         width: 75px;
         height: 50px
+    }
+
+    .headerPadding {
+        padding: 0;
     }
 
     .headerLogo {
@@ -173,7 +179,7 @@ body {
 .waviy span {
     position: relative;
     display: inline-block;
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
     text-transform: uppercase;
     animation: flip 2s infinite;
