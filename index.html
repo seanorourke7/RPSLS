@@ -13,59 +13,15 @@
 
     <h1 class="headerLogo">Rock Paper Scissors Lizard Spock</h1>
 
-    <h1 id="centerText">Player 1 ...VS... CPU</h1>
 
-    <!--container for the results to appear-->
+    <button onclick="window.location.href='/assets/html/game.html'" id="howToPlay" type="submit">
+        Play Game</button>
 
-    <div id="result-container">
-        <span id="result-display">
-        </span>
-        <span id="cpu-display">
-        </span>
-    </div>
+    <button onclick="window.location.href='/assets/html/howtoplay.html'" id="howToPlay" type="submit">
+        How to Play</button>
 
-    <!--wave code sourced from https: //alvarotrigo.com/blog/css-text-animations -->
-
-    <body>
-        <div class="waviy">
-            <span style="--i:1">C</span>
-            <span style="--i:2">H</span>
-            <span style="--i:3">O</span>
-            <span style="--i:4">O</span>
-            <span style="--i:5">S</span>
-            <span style="--i:6">E</span>
-            <span style="--i:7"></span>
-            <span style="--i:8">Y</span>
-            <span style="--i:9">O</span>
-            <span style="--i:10">U</span>
-            <span style="--i:11">R</span>
-            <span style="--i:12"></span>
-            <span style="--i:13">W</span>
-            <span style="--i:14">E</span>
-            <span style="--i:15">A</span>
-            <span style="--i:16">P</span>
-            <span style="--i:17">O</span>
-            <span style="--i:18">N</span>
-        </div>
-    </body>
-
-    <!--container for the game buttons to be selecteed by the player-->
-
-    <div id="game-container">
-        <button class="icons" id="rock" type="submit"></button>
-        <button class="icons" id="paper" type="submit"></button>
-        <button class="icons" id="scissors" type="submit"></button>
-        <button class="icons" id="lizard" type="submit"></button>
-        <button class="icons" id="spock" type="submit"></button>
-    </div>
-
-    <!--link to second page with instructional video-->
-
-    <form action="/assets/html/howtoplay.html" method="get" target="_blank">
-        <button id="howToPlay" type="submit">How to Play</button>
-
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

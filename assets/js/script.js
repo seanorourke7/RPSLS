@@ -14,7 +14,7 @@ for (let gameTile of gameType) {
 };
 
 /*This funtion will take the user selection and place it in the user selected button.
-It will then be compared with the CPU choice.*/
+It will then be compared with the CPU choice .*/
 
 function displayBox(selectedIcon) {
     document.getElementById("result-display").innerHTML = `<button class="icons" id=${selectedIcon} type="submit"></button>`;
