@@ -96,7 +96,7 @@ Images used are a selection of hand poses to symbolise rock paper and scissors a
 ### Wireframes
 
 I drew out a very simple wireframes with mockflow.
-The structure changed as I went through the process of developing the game as I had originally intended on having only 1 page. It became quickly apparant that this wouldn't work stylistically so i spread it out to 3 pages. the core concept remained the same although I changed the layout of the buttons from the top to the bottom as it looked better on testing to have the display above the users input rahter than below.
+The structure changed as I went through the process of developing the game as I had originally intended on having only 1 page. It became quickly apparant that this wouldn't work stylistically so I spread it out to 4 pages. The core concept remained the same although I changed the layout of the buttons from the top to the bottom as it looked better on testing to have the display above the users input rahter than below.
 
 ![homepage wireframe](/assets/images/readme/wireframeRPSLS.png)
 
@@ -139,17 +139,26 @@ I would like to add some sounds that interact with the user to later versions.
 
 All buttons with images have aria labels with descriptive text.
 The font and colour scheme work well and accessability on lighthouse is 100%.
+
 ![Lighthouse](/assets/images/readme/lighthouse.png)
 
 ## Technologies Used
 
 Github - To save and store the files for the website.
+
 Codeanywhere - to write the code.
+
 Google Fonts - To import the fonts used on the website.
+
 SweetAlerts2 - for the alert boxes.
+
 Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
+
 Tiny PNG To compress images.
+
 Am I Responsive? To show the website image on a range of devices.
+
+Mockflow for the wireframe.
 
 ### Languages Used
 
@@ -162,7 +171,7 @@ Deployment
 Github Pages was used to deploy the live website. The instructions to achieve this are below:
 
 Log in (or sign up) to Github.
-Find the repository for this project, RPSLS.
+Find the repository for this project, seanorourke7/RPSLS.
 Click on the Settings link.
 Click on the Pages link in the left hand side navigation bar.
 In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
