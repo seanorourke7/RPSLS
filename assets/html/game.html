@@ -57,21 +57,48 @@
     <!--container for the game buttons to be selecteed by the player-->
 
     <div id="game-container">
-        <button onclick="buttonPlay()" aria-label="Rock" class="icons" id="rock" type="submit"></button>
-        <button onclick="buttonPlay()" aria-label="Paper" class="icons" id="paper" type="submit"></button>
-        <button onclick="buttonPlay()" aria-label="Scissors" class="icons" id="scissors" type="submit"></button>
-        <button onclick="buttonPlay()" aria-label="Lizard" class="icons" id="lizard" type="submit"></button>
-        <button onclick="buttonPlay()" aria-label="Spock" class="icons" id="spock" type="submit"></button>
+        <button onclick="rockPlay()" aria-label="Rock" class="icons" id="rock" type="submit"></button>
+        <button onclick="paperPlay()" aria-label="Paper" class="icons" id="paper" type="submit"></button>
+        <button onclick="scissorsPlay()" aria-label="Scissors" class="icons" id="scissors" type="submit"></button>
+        <button onclick="lizardPlay()" aria-label="Lizard" class="icons" id="lizard" type="submit"></button>
+        <button onclick="spockPlay()" aria-label="Spock" class="icons" id="spock" type="submit"></button>
     </div>
 
-    <audio id="buttonSound">
+    <audio id="rockSound">
         <source src="../audio/photonTorpedo.wav">
     </audio>
-    <audio id="drawSound">
-        <source src="../audio/Illogical.wav">
+
+    <audio id="paperSound">
+        <source src="../audio/cpuSound1.wav">
     </audio>
 
+    <audio id="scissorsSound">
+        <source src="../audio/cpuSound2.wav">
+    </audio>
+
+    <audio id="lizardSound">
+        <source src="../audio/cpuSound3.wav">
+    </audio>
+
+    <audio id="spockSound">
+        <source src="../audio/tos-computer-04.wav">
+    </audio>
+
+    <audio id="drawSound">
+        <source src="../audio/irritating1.wav">
+    </audio>
+
+    <audio id="winSound">
+        <source src="../audio/Spock_Fascinating1.wav">
+    </audio>
+
+    <audio id="loseSound">
+        <source src="../audio/Spock_Checkmate.wav">
+    </audio>
+
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/checkAnswer.js"></script>
     <script src="../js/script.js"></script>
 </body>
 
