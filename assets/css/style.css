@@ -198,6 +198,14 @@ body {
 
 }
 
+@media screen and (max-width: 400px) {
+    .swal-height {
+        height: 200px;
+        width: 200px;
+        font-size: 8px;
+    }
+}
+
 /* Wave effect code sourced from https: //alvarotrigo.com/blog/css-text-animations/ */
 
 .waviy {
