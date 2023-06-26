@@ -4,7 +4,7 @@ This site is to host a game called Rock Paper Scissors Lizard Spock. This game w
 
 I built it to demonstrate the abilities i have learned so far, and for course evaluation.
 
-This is a multi page site with links to each page. It contains a Home, Game, How to Play (with video) and How to Play with text pages.
+This is a multi page site with links to each page. It contains a Home, Game, How to Play (with video) and Rules Page with text explaining the rules.
 
 The site is responsive across different screen sizes.
 
@@ -63,7 +63,7 @@ Both buttons react on hover to invite ineraction.
 
 The 'How to Play' page has a video embedded that explains the rules of the game. Underneath the video is a link "back to the game" which redirects the user to the game. The header links back to the homepage.
 
-If for any reason the video doesn't load or isn't used there is a 'text instructions' button underneath the video that opens a new page with text instructions on how the game works.
+If for any reason the video doesn't load or isn't used there is a 'Rules' button underneath the video that opens a new page with text instructions on how the game works.
 
 The Game page is laid out in an intuitive way with five buttons representing the users choice and animated text inviting the user to 'Choose a Weapon'.
 
@@ -72,6 +72,8 @@ Once the user interacts with the game and 'Chooses a Weapon' the cpu will automa
 A score display will increment scores for the player and the CPU. This is located above the display area for the user and cpu choices.
 
 The logo at the top of the page will react on hover and bring the user to the home page.
+
+There are sound alerts unique to each button and a different sound will play if the player wins, loses or draws.  
 
 ## Design
 
@@ -118,9 +120,7 @@ A How to Play page with a video embedded that explains the rules.
 
 ![HowToPlay destop](/assets/images/readme/desktopHowtoplay.png)
 
-![HowToPlay mobile](/assets/images/readme/mobileHowtoplay.png)
-
-A how to play page with text explaining the rules.
+A Rules page with text explaining the rules.
 
 ![How to play desktop](/assets/images/readme/textInstructions.png)
 
@@ -133,7 +133,7 @@ There is a header that is consitant across the site and in the 'Game' and 'How t
 
 ### Future Implementations
 
-I would like to add some sounds that interact with the user to later versions.
+I would like to add more sounds and some movement in the buttons.  
 
 ### Accessibility
 
@@ -159,6 +159,8 @@ Tiny PNG To compress images.
 Am I Responsive? To show the website image on a range of devices.
 
 Mockflow for the wireframe.
+
+The sounds were sourced from https://www.mediacollege.com/downloads/sound-effects/star-trek/tos/ 
 
 ### Languages Used
 
@@ -203,7 +205,9 @@ Testing was ongoing throughout the entire build. I utilised Chrome developer too
 
 I didn't manage to make an any appointments with my Mentor for this project but I was able to troubleshoot on slack and through general google searches.
 
-Bugs
+When I wrote the funtion to check the answer originally it was over 200 lines in length. I had written all permutations into one function. Although it worked fine, I wasn't comfortable with the the length of it so I split it into a check correct answer and a seperate check for wrong answer function and split them into 2 seperate js pages away from the main js page so they stand on their own. It was too much code on one page. I would like to reduce the code further still and hope to do so in future. 
+
+## Bugs
 
 When checking Javascript Validators I got several errors referencing the use of 'let' to declare a variable. I changed these to 'var'.
 
@@ -227,6 +231,7 @@ I used slack, youtube and other online resources to help with some code specific
 ### Code Used
 
 I used code for the Wave effect on 'Choose Your Weapon' from https: //alvarotrigo.com/blog/css-text-animations.
+
 .waviy {
 position: relative;
 }
@@ -243,10 +248,10 @@ animation-delay: calc(.2s \* var(--i))
 
 @keyframes flip {
 
-    0%,
-    80% {
-        transform: rotateY(360deg)
-    }
+0%,
+80% {
+transform: rotateY(360deg)
+}
 
 }
 
