@@ -57,12 +57,19 @@
     <!--container for the game buttons to be selecteed by the player-->
 
     <div id="game-container">
-        <button aria-label="Rock" class="icons" id="rock" type="submit"></button>
-        <button aria-label="Paper" class="icons" id="paper" type="submit"></button>
-        <button aria-label="Scissors" class="icons" id="scissors" type="submit"></button>
-        <button aria-label="Lizard" class="icons" id="lizard" type="submit"></button>
-        <button aria-label="Spock" class="icons" id="spock" type="submit"></button>
+        <button onclick="buttonPlay()" aria-label="Rock" class="icons" id="rock" type="submit"></button>
+        <button onclick="buttonPlay()" aria-label="Paper" class="icons" id="paper" type="submit"></button>
+        <button onclick="buttonPlay()" aria-label="Scissors" class="icons" id="scissors" type="submit"></button>
+        <button onclick="buttonPlay()" aria-label="Lizard" class="icons" id="lizard" type="submit"></button>
+        <button onclick="buttonPlay()" aria-label="Spock" class="icons" id="spock" type="submit"></button>
     </div>
+
+    <audio id="buttonSound">
+        <source src="../audio/photonTorpedo.wav">
+    </audio>
+    <audio id="drawSound">
+        <source src="../audio/Illogical.wav">
+    </audio>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/script.js"></script>

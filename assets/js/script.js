@@ -49,6 +49,7 @@ function checkAnswer() {
     var spock = '<button class="icons" id="spock" type="submit"></button>';
 
     if (userChoice === aiChoice) {
+        setTimeout(function () { drawPlay(); }, 500);
         setTimeout(function () {
             Swal.fire({
                 icon: 'info', title: "DRAW", position: 'center', customClass: 'swal-height', showConfirmButton: false,
@@ -241,6 +242,8 @@ function checkAnswer() {
 
 
 }
+
+/* funtions to increment scores for player and CPU */
 function incrementPlayerScore() {
     var oldScore = parseInt(document.getElementById("playerScore").innerText);
     document.getElementById("playerScore").innerText = ++oldScore;
@@ -250,5 +253,17 @@ function incrementCpuScore() {
     var oldScore = parseInt(document.getElementById("cpuScore").innerText);
     document.getElementById("cpuScore").innerText = ++oldScore;
 
+}
+
+/*funtions to handle sounds. */
+
+var buttonAudio = document.getElementById("buttonSound");
+function buttonPlay() {
+    buttonAudio.play();
+}
+
+var drawAudio = document.getElementById("drawSound");
+function drawPlay() {
+    drawAudio.play();
 }
 
