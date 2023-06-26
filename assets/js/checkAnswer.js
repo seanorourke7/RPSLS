@@ -20,26 +20,7 @@ function checkAnswer() {
         }, 750);
 
     }
-    else if (userChoice === rock && aiChoice === paper) {
-        setTimeout(function () { losePlay(); }, 700);
-        incrementCpuScore();
-        setTimeout(function () {
-            Swal.fire({
-                icon: 'error', title: "You Lose", text: "Paper Covers Rock", position: 'center', customClass: 'swal-height', showConfirmButton: false,
-                timer: 1500
-            });
-        }, 1000);
-    }
-    else if (userChoice === rock && aiChoice === spock) {
-        setTimeout(function () { losePlay(); }, 700);
-        incrementCpuScore();
-        setTimeout(function () {
-            Swal.fire({
-                icon: 'error', title: "You Lose", text: "Spock Vaporises Rock", position: 'center', customClass: 'swal-height', showConfirmButton: false,
-                timer: 1500
-            });
-        }, 750);
-    }
+
     else if (userChoice === rock && aiChoice === lizard) {
         setTimeout(function () { winPlay(); }, 700);
         incrementPlayerScore();
@@ -70,26 +51,7 @@ function checkAnswer() {
             });
         }, 750);
     }
-    else if (userChoice === paper && aiChoice === lizard) {
-        setTimeout(function () { losePlay(); }, 700);
-        incrementCpuScore();
-        setTimeout(function () {
-            Swal.fire({
-                icon: 'error', title: "You Lose", text: "Lizard Eats Paper", position: 'center', customClass: 'swal-height', showConfirmButton: false,
-                timer: 1500
-            });
-        }, 750);
-    }
-    else if (userChoice === paper && aiChoice === scissors) {
-        setTimeout(function () { losePlay(); }, 700);
-        incrementCpuScore();
-        setTimeout(function () {
-            Swal.fire({
-                icon: 'error', title: "You Lose", text: "Scissors Cuts Paper", position: 'center', customClass: 'swal-height', showConfirmButton: false,
-                timer: 1500
-            });
-        }, 750);
-    }
+
     else if (userChoice === paper && aiChoice === spock) {
         setTimeout(function () { winPlay(); }, 700);
         incrementPlayerScore();
@@ -100,16 +62,7 @@ function checkAnswer() {
             });
         }, 750);
     }
-    else if (userChoice === scissors && aiChoice === rock) {
-        setTimeout(function () { losePlay(); }, 700);
-        incrementCpuScore();
-        setTimeout(function () {
-            Swal.fire({
-                icon: 'error', title: "You Lose", text: "Rock Crushes Scissors", position: 'center', customClass: 'swal-height', showConfirmButton: false,
-                timer: 1500
-            });
-        }, 750);
-    }
+
     else if (userChoice === scissors && aiChoice === lizard) {
         setTimeout(function () { winPlay(); }, 700);
         incrementPlayerScore();
@@ -130,36 +83,7 @@ function checkAnswer() {
             });
         }, 750);
     }
-    else if (userChoice === scissors && aiChoice === spock) {
-        setTimeout(function () { losePlay(); }, 700);
-        incrementCpuScore();
-        setTimeout(function () {
-            Swal.fire({
-                icon: 'error', title: "You Lose", text: "Spock Smashes Scissors", position: 'center', customClass: 'swal-height', showConfirmButton: false,
-                timer: 1500
-            });
-        }, 750);
-    }
-    else if (userChoice === lizard && aiChoice === rock) {
-        setTimeout(function () { losePlay(); }, 700);
-        incrementCpuScore();
-        setTimeout(function () {
-            Swal.fire({
-                icon: 'error', title: "You Lose", text: "Rock Crushes Lizard", position: 'center', customClass: 'swal-height', showConfirmButton: false,
-                timer: 1500
-            });
-        }, 750);
-    }
-    else if (userChoice === lizard && aiChoice === scissors) {
-        setTimeout(function () { losePlay(); }, 700);
-        incrementCpuScore();
-        setTimeout(function () {
-            Swal.fire({
-                icon: 'error', title: "You Lose", text: "Scissors Stabs Lizard", position: 'center', customClass: 'swal-height', showConfirmButton: false,
-                timer: 1500
-            });
-        }, 750);
-    }
+
     else if (userChoice === lizard && aiChoice === paper) {
         setTimeout(function () { winPlay(); }, 700);
         incrementPlayerScore();
@@ -200,27 +124,7 @@ function checkAnswer() {
             });
         }, 750);
     }
-    else if (userChoice === spock && aiChoice === paper) {
-        setTimeout(function () { losePlay(); }, 700);
-        incrementCpuScore();
-        setTimeout(function () {
-            Swal.fire({
-                icon: 'error', title: "You Lose", text: "Paper Disproves Spock", position: 'center', customClass: 'swal-height', showConfirmButton: false,
-                timer: 1500
-            });
-        }, 750);
+    else {
+        checkLose();
     }
-    else if (userChoice === spock && aiChoice === lizard) {
-        setTimeout(function () { losePlay(); }, 700);
-        incrementCpuScore();
-        setTimeout(function () {
-            Swal.fire({
-                icon: 'error', title: "You Lose", text: "Lizard Poisons Spock", position: 'center', customClass: 'swal-height', showConfirmButton: false,
-                timer: 1500
-            });
-        }, 750);
-    }
-
-
-
 }
