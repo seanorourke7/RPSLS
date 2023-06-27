@@ -30,6 +30,7 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
+        playerMaxScore();
     }
     else if (userChoice === rock && aiChoice === scissors) {
         setTimeout(function () { winPlay(); }, 700);
@@ -40,6 +41,7 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
+        playerMaxScore();
     }
     else if (userChoice === paper && aiChoice === rock) {
         setTimeout(function () { winPlay(); }, 700);
@@ -50,6 +52,7 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
+        playerMaxScore();
     }
 
     else if (userChoice === paper && aiChoice === spock) {
@@ -61,6 +64,7 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
+        playerMaxScore();
     }
 
     else if (userChoice === scissors && aiChoice === lizard) {
@@ -72,6 +76,7 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
+        playerMaxScore();
     }
     else if (userChoice === scissors && aiChoice === paper) {
         setTimeout(function () { winPlay(); }, 700);
@@ -82,6 +87,7 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
+        playerMaxScore();
     }
 
     else if (userChoice === lizard && aiChoice === paper) {
@@ -93,6 +99,7 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
+        playerMaxScore();
     }
     else if (userChoice === lizard && aiChoice === spock) {
         setTimeout(function () { winPlay(); }, 700);
@@ -103,6 +110,7 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
+        playerMaxScore();
     }
     else if (userChoice === spock && aiChoice === rock) {
         setTimeout(function () { winPlay(); }, 700);
@@ -113,6 +121,7 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
+        playerMaxScore();
     }
     else if (userChoice === spock && aiChoice === scissors) {
         setTimeout(function () { winPlay(); }, 700);
@@ -123,6 +132,7 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
+        playerMaxScore();
     }
     else {
         checkLose();

@@ -11,7 +11,7 @@ function startGame() {
     for (var gameTile of gameType) {
         gameTile.addEventListener("click", function () {
             let selectedIcon = this.getAttribute("ID");
-            displayBox(selectedIcon);
+            userSelection(selectedIcon);
             cpuTile();
             checkAnswer();
         });
@@ -22,18 +22,18 @@ function startGame() {
 /*This funtion will take the user selection and place it in the user selected button.
 It will then be compared with the CPU choice .*/
 
-function displayBox(selectedIcon) {
+function userSelection(selectedIcon) {
     document.getElementById("result-display").innerHTML = `<button class="icons" id=${selectedIcon} type="submit"></button>`;
 }
 
 // This will generate a random choice for the CPU
 
 function cpuTile() {
+
     var tileArray = ["rock", "paper", "scissors", "lizard", "spock"];
     var ranNumber = Math.floor(Math.random() * 5);
     var cpuChoice = tileArray[ranNumber];
     document.getElementById("cpu-display").innerHTML = `<button class="icons" id=${cpuChoice} type="submit"></button>`;
-
 }
 
 /* funtions to increment scores for player and CPU */
@@ -90,4 +90,40 @@ function winPlay() {
 var loseAudio = document.getElementById("loseSound");
 function losePlay() {
     loseAudio.play();
+}
+
+function playerMaxScore() {
+    var playerMAxScore = (document.getElementById("playerScore").innerText);
+    if (playerMAxScore === '10') {
+        setTimeout(function () {
+            Swal.fire({
+                title: 'Congratulations! You have beaten the Computer',
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                }
+            });
+        }, 3000);
+        setTimeout(function () { location.reload(); }, 6000);
+    }
+}
+
+function cpuMaxScore() {
+    var cpuMAxScore = (document.getElementById("cpuScore").innerText);
+    if (cpuMAxScore === '10') {
+        setTimeout(function () {
+            Swal.fire({
+                title: 'You Are No Match for This Computer',
+                showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                }
+            });
+        }, 3000);
+        setTimeout(function () { location.reload(); }, 6000);
+    }
 }
