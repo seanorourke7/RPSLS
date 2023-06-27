@@ -1,3 +1,4 @@
+/*listens for the page to load before starting the game*/
 
 document.addEventListener("DOMContentLoaded", function () {
     startGame();
@@ -92,6 +93,23 @@ function losePlay() {
     loseAudio.play();
 }
 
+/*function to handle audio when the game reaches 10 wins or losses*/
+
+var gameOverSound = document.getElementById("gameOver");
+function gameOverAudio() {
+    gameOverSound.play();
+}
+
+var gameWinSound = document.getElementById("gameWinner");
+function gameWinAudio() {
+    gameWinSound.play();
+}
+
+
+
+/*this funtion calculates the current player score, if it has reached 10 
+it congratulates the player and resfreshes the page after 5 seconds.*/
+
 function playerMaxScore() {
     var playerMAxScore = (document.getElementById("playerScore").innerText);
     if (playerMAxScore === '10') {
@@ -106,9 +124,13 @@ function playerMaxScore() {
                 }
             });
         }, 3000);
-        setTimeout(function () { location.reload(); }, 6000);
+        gameWinAudio();
+        setTimeout(function () { location.reload(); }, 5000);
     }
 }
+
+/*this funtion calculates the current CPU score, if it has reached 10 
+it tells the player they have lost and resfreshes the page after 5 seconds.*/
 
 function cpuMaxScore() {
     var cpuMAxScore = (document.getElementById("cpuScore").innerText);
@@ -124,6 +146,7 @@ function cpuMaxScore() {
                 }
             });
         }, 3000);
-        setTimeout(function () { location.reload(); }, 6000);
+        gameOverAudio();
+        setTimeout(function () { location.reload(); }, 5000);
     }
 }

@@ -13,7 +13,7 @@
 
     <h1 class="headerPadding"><a class="headerLogo" href="../../index.html">Rock Paper Siccors Lizard Spock</a></h1>
 
-    <div id="centerText">
+    <div class="gameText">
         <span>Player Score</span>
         <span id="playerScore">0</span>
         <span>Cpu Score</span>
@@ -69,6 +69,10 @@
         <button onclick="spockPlay()" aria-label="Spock" class="icons" id="spock" type="submit"></button>
     </div>
 
+    <div class="gameText">
+        <p>The First to Reach a Score of 10 <br> Will be The Ultimate Winner</p>
+    </div>
+
     <!--audio for the buttons and the win/lose/draw alerts.-->
 
     <audio id="rockSound">
@@ -101,6 +105,14 @@
 
     <audio id="loseSound">
         <source src="../audio/YouLose.mp3">
+    </audio>
+
+    <audio id="gameOver">
+        <source src="../audio/gameOver.wav">
+    </audio>
+
+    <audio id="gameWinner">
+        <source src="../audio/gameWinner.wav">
     </audio>
 
 

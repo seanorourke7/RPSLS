@@ -79,7 +79,7 @@ body {
     margin-left: 30px;
 }
 
-#centerText {
+.gameText {
     font-size: 40px;
     color: white;
 }
