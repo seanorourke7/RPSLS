@@ -108,7 +108,7 @@ function gameWinAudio() {
 
 
 /*this funtion calculates the current player score, if it has reached 10 
-it congratulates the player and resfreshes the page after 5 seconds.*/
+it congratulates the player and resfreshes the page after 8 seconds.*/
 
 function playerMaxScore() {
     var playerMAxScore = (document.getElementById("playerScore").innerText);
@@ -119,18 +119,22 @@ function playerMaxScore() {
                 showClass: {
                     popup: 'animate__animated animate__fadeInDown'
                 },
+
                 hideClass: {
                     popup: 'animate__animated animate__fadeOutUp'
-                }
+                },
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'Start Again!'
+
             });
         }, 3000);
         gameWinAudio();
-        setTimeout(function () { location.reload(); }, 5000);
+        setTimeout(function () { location.reload(); }, 8000);
     }
 }
 
 /*this funtion calculates the current CPU score, if it has reached 10 
-it tells the player they have lost and resfreshes the page after 5 seconds.*/
+it tells the player they have lost and resfreshes the page after 8 seconds.*/
 
 function cpuMaxScore() {
     var cpuMAxScore = (document.getElementById("cpuScore").innerText);
@@ -143,10 +147,13 @@ function cpuMaxScore() {
                 },
                 hideClass: {
                     popup: 'animate__animated animate__fadeOutUp'
-                }
+                },
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'Start Again!'
+
             });
         }, 3000);
         gameOverAudio();
-        setTimeout(function () { location.reload(); }, 5000);
+        setTimeout(function () { location.reload(); }, 8000);
     }
 }
