@@ -17,8 +17,8 @@ function checkLose() {
             });
         }, 1000);
         cpuMaxScore();
-
-    } else if (userChoice === rock && aiChoice === spock) {
+    }
+    else if (userChoice === rock && aiChoice === spock) {
         setTimeout(function () { losePlay(); }, 700);
         incrementCpuScore();
         setTimeout(function () {
@@ -29,7 +29,8 @@ function checkLose() {
         }, 750);
         cpuMaxScore();
 
-    } else if (userChoice === paper && aiChoice === lizard) {
+    }
+    else if (userChoice === paper && aiChoice === lizard) {
         setTimeout(function () { losePlay(); }, 700);
         incrementCpuScore();
         setTimeout(function () {

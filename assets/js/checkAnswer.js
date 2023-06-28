@@ -21,7 +21,6 @@ function checkAnswer() {
         }, 750);
 
     }
-
     else if (userChoice === rock && aiChoice === lizard) {
         setTimeout(function () { winPlay(); }, 700);
         incrementPlayerScore();
@@ -55,7 +54,6 @@ function checkAnswer() {
         }, 750);
         playerMaxScore();
     }
-
     else if (userChoice === paper && aiChoice === spock) {
         setTimeout(function () { winPlay(); }, 700);
         incrementPlayerScore();
@@ -67,7 +65,6 @@ function checkAnswer() {
         }, 750);
         playerMaxScore();
     }
-
     else if (userChoice === scissors && aiChoice === lizard) {
         setTimeout(function () { winPlay(); }, 700);
         incrementPlayerScore();
@@ -90,7 +87,6 @@ function checkAnswer() {
         }, 750);
         playerMaxScore();
     }
-
     else if (userChoice === lizard && aiChoice === paper) {
         setTimeout(function () { winPlay(); }, 700);
         incrementPlayerScore();
