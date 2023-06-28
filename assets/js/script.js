@@ -105,8 +105,6 @@ function gameWinAudio() {
     gameWinSound.play();
 }
 
-
-
 /*this funtion calculates the current player score, if it has reached 10 
 it congratulates the player and resfreshes the page after 8 seconds.*/
 

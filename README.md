@@ -44,7 +44,6 @@ https://seanorourke7.github.io/RPSLS/
 - [Testing](#testing)
 
 - [Credits](#credits)
-  - [Code Used](#code-used)
   - [Content](#content)
   - [Media](#media)
   - [Acknowledgments](#acknowledgments)
@@ -67,13 +66,13 @@ If for any reason the video doesn't load or isn't used there is a 'Rules' button
 
 The Game page is laid out in an intuitive way with five buttons representing the users choice and animated text inviting the user to 'Choose a Weapon'.
 
-Once the user interacts with the game and 'Chooses a Weapon' the cpu will automatically generate a counter weapon. Both weapons are displayed side by side above the buttons. An alert will let the user know if they have won, lost or drawn. This alert also explains the reason ie:"Rock crushes Scissors".
+Once the user interacts with the game and 'Chooses a Weapon' the cpu will automatically generate a counter weapon. Both weapons are displayed side by side above the buttons. An alert box and a sound will let the user know if they have won, lost or drawn. This alert also explains the reason ie:"Rock crushes Scissors".
 
-A score display will increment scores for the player and the CPU. This is located above the display area for the user and cpu choices.
+A score display will increment scores for the player and the CPU. This is located above the display area for the user and cpu choices. Once a score of 10 is reached a winer is declared and the game restarts.
 
 The logo at the top of the page will react on hover and bring the user to the home page.
 
-There are sound alerts unique to each button and a different sound will play if the player wins, loses or draws.  
+There are sound alerts unique to each button and a different sound will play if the player wins, loses or draws.
 
 ## Design
 
@@ -133,7 +132,7 @@ There is a header that is consitant across the site and in the 'Game' and 'How t
 
 ### Future Implementations
 
-I would like to add more sounds and some movement in the buttons.  
+I would like to add more sounds and some movement in the buttons.
 
 ### Accessibility
 
@@ -160,7 +159,7 @@ Am I Responsive? To show the website image on a range of devices.
 
 Mockflow for the wireframe.
 
-The sounds were sourced from https://www.mediacollege.com/downloads/sound-effects/star-trek/tos/ 
+The sounds were sourced from https://www.mediacollege.com/downloads/sound-effects/star-trek/tos/
 
 ### Languages Used
 
@@ -205,7 +204,9 @@ Testing was ongoing throughout the entire build. I utilised Chrome developer too
 
 I didn't manage to make an any appointments with my Mentor for this project but I was able to troubleshoot on slack and through general google searches.
 
-When I wrote the funtion to check the answer originally it was over 200 lines in length. I had written all permutations into one function. Although it worked fine, I wasn't comfortable with the the length of it so I split it into a check correct answer and a seperate check for wrong answer function and split them into 2 seperate js pages away from the main js page so they stand on their own. It was too much code on one page. I would like to reduce the code further still and hope to do so in future. 
+When I wrote the funtion to check the answer originally it was over 200 lines in length. I had written all permutations into one function. Although it worked fine, I wasn't comfortable with the the length of it so I split it into a 'check correct answer' and a seperate 'check for wrong answer' function and split them into 2 seperate js pages away from the main js page so they stand on their own. It was too much code on one page. I would like to reduce the code further still and hope to do so in future.
+
+I had several friends/family test the game and made changes based on their feedback. The biggest changes were to add sounds, to create a winning finish line, ie: first to 10, and to move the selection tiles below the result tiles.
 
 ## Bugs
 
@@ -227,33 +228,6 @@ No bugs were identified in HTML or CSS validators.
 
 Most of what I learned for this project came from the Love-Maths project from code institute.
 I used slack, youtube and other online resources to help with some code specifics.
-
-### Code Used
-
-I used code for the Wave effect on 'Choose Your Weapon' from https: //alvarotrigo.com/blog/css-text-animations.
-
-.waviy {
-position: relative;
-}
-
-.waviy span {
-position: relative;
-display: inline-block;
-font-size: 20px;
-color: #fff;
-text-transform: uppercase;
-animation: flip 2s infinite;
-animation-delay: calc(.2s \* var(--i))
-}
-
-@keyframes flip {
-
-0%,
-80% {
-transform: rotateY(360deg)
-}
-
-}
 
 ### Content
 
