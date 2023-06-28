@@ -110,7 +110,7 @@ it congratulates the player and resfreshes the page after 8 seconds.*/
 
 function playerMaxScore() {
     var playerMAxScore = (document.getElementById("playerScore").innerText);
-    if (playerMAxScore === '10') {
+    if (playerMAxScore === '5') {
         setTimeout(function () {
             Swal.fire({
                 title: 'Congratulations! You have beaten the Computer',
@@ -136,7 +136,7 @@ it tells the player they have lost and resfreshes the page after 8 seconds.*/
 
 function cpuMaxScore() {
     var cpuMAxScore = (document.getElementById("cpuScore").innerText);
-    if (cpuMAxScore === '10') {
+    if (cpuMAxScore === '5') {
         setTimeout(function () {
             Swal.fire({
                 title: 'You Are No Match for This Computer',

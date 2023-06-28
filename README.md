@@ -68,7 +68,7 @@ The Game page is laid out in an intuitive way with five buttons representing the
 
 Once the user interacts with the game and 'Chooses a Weapon' the cpu will automatically generate a counter weapon. Both weapons are displayed side by side above the buttons. An alert box and a sound will let the user know if they have won, lost or drawn. This alert also explains the reason ie:"Rock crushes Scissors".
 
-A score display will increment scores for the player and the CPU. This is located above the display area for the user and cpu choices. Once a score of 10 is reached a winer is declared and the game restarts.
+A score display will increment scores for the player and the CPU. This is located above the display area for the user and cpu choices. Once a score of 5 is reached a winner is declared and the game restarts.
 
 The logo at the top of the page will react on hover and bring the user to the home page.
 

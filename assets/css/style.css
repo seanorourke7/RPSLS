@@ -76,6 +76,10 @@ body {
     box-shadow: 0 5px #666;
 }
 
+.icons:hover {
+    cursor: pointer;
+}
+
 #result-display {
     margin-right: 30px;
 }
