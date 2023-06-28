@@ -229,7 +229,7 @@ No bugs were identified in HTML or CSS validators.
 Most of what I learned for this project came from the Love-Maths , and Love-Running projects from code institute.
 I used slack, youtube and other online resources to help with some code specifics.
 
-The Alert box code was sourced from SweetAlert2 
+The Alert box code was sourced from SweetAlert2
 
 ### Content
 
