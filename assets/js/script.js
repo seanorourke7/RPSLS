@@ -11,7 +11,7 @@ function startGame() {
     var gameType = document.getElementsByClassName("icons");
     for (var gameTile of gameType) {
         gameTile.addEventListener("click", function () {
-            let selectedIcon = this.getAttribute("ID");
+            var selectedIcon = this.getAttribute("ID");
             userSelection(selectedIcon);
             cpuTile();
             checkAnswer();

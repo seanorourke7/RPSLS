@@ -1,5 +1,6 @@
 /*This function will check the User answer 
-and compare it to the CPU's random answer and display an alert based on the outcome*/
+and compare it to the CPU's random answer and display an alert based on the outcome.
+The code for the alert boxes were sourced from https://sweetalert2.github.io */
 
 function checkAnswer() {
     var userChoice = document.getElementById("result-display").innerHTML;

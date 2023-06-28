@@ -204,13 +204,13 @@ Testing was ongoing throughout the entire build. I utilised Chrome developer too
 
 I didn't manage to make an any appointments with my Mentor for this project but I was able to troubleshoot on slack and through general google searches.
 
-When I wrote the funtion to check the answer originally it was over 200 lines in length. I had written all permutations into one function. Although it worked fine, I wasn't comfortable with the the length of it so I split it into a 'check correct answer' and a seperate 'check for wrong answer' function and split them into 2 seperate js pages away from the main js page so they stand on their own. It was too much code on one page. I would like to reduce the code further still and hope to do so in future.
+When I wrote the funtion to check the answer originally it was over 200 lines in length. I had written all permutations into one function. Although it worked fine, I wasn't comfortable with the the length of it so I split it into a 'checkAnswer' function which checked if the user won or if it is a draw and a seperate 'checkLose Function' to check if the CPU won, and split them into 2 seperate js pages away from the main js page so they stand on their own. It was too much code on one page. I would like to reduce the code further still and hope to do so in future.
 
-I had several friends/family test the game and made changes based on their feedback. The biggest changes were to add sounds, to create a winning finish line, ie: first to 10, and to move the selection tiles below the result tiles.
+I had several friends/family test the game and made changes based on their feedback. The biggest changes were to add sounds, to create a winning finish line, ie: first to 10, and to move the selection tiles below the result tiles to make it more visually appealing.
 
 ## Bugs
 
-When checking Javascript Validators I got several errors referencing the use of 'let' to declare a variable. I changed these to 'var'.
+When checking Javascript Validator JsHint, I got several errors referencing the use of 'let' to declare a variable. I changed these to 'var'.
 
 I also got an error about declaring a 'var' outside a funtion which led me to realise that I had the game start without listening for the DOM to be loaded and the initial code was not written into an enclosed fuction. So I re-wrote the initial code into a function that listens for the DOM to be loaded.
 
@@ -226,8 +226,10 @@ No bugs were identified in HTML or CSS validators.
 
 ## Credits
 
-Most of what I learned for this project came from the Love-Maths project from code institute.
+Most of what I learned for this project came from the Love-Maths , and Love-Running projects from code institute.
 I used slack, youtube and other online resources to help with some code specifics.
+
+The Alert box code was sourced from SweetAlert2 
 
 ### Content
 
