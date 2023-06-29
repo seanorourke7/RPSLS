@@ -30,7 +30,6 @@ function userSelection(selectedIcon) {
 // This will generate a random choice for the CPU
 
 function cpuTile() {
-
     var tileArray = ["rock", "paper", "scissors", "lizard", "spock"];
     var ranNumber = Math.floor(Math.random() * 5);
     var cpuChoice = tileArray[ranNumber];
@@ -105,7 +104,7 @@ function gameWinAudio() {
     gameWinSound.play();
 }
 
-/*this funtion calculates the current player score, if it has reached 10 
+/*this funtion calculates the current player score, if it has reached 5 
 it congratulates the player and resfreshes the page after 8 seconds.*/
 
 function playerMaxScore() {
@@ -114,16 +113,8 @@ function playerMaxScore() {
         setTimeout(function () {
             Swal.fire({
                 title: 'Congratulations! You have beaten the Computer',
-                showClass: {
-                    popup: 'animate__animated animate__fadeInDown'
-                },
-
-                hideClass: {
-                    popup: 'animate__animated animate__fadeOutUp'
-                },
                 confirmButtonColor: '#3085d6',
                 confirmButtonText: 'Start Again!'
-
             });
         }, 3000);
         gameWinAudio();
@@ -131,7 +122,7 @@ function playerMaxScore() {
     }
 }
 
-/*this funtion calculates the current CPU score, if it has reached 10 
+/*this funtion calculates the current CPU score, if it has reached 5 
 it tells the player they have lost and resfreshes the page after 8 seconds.*/
 
 function cpuMaxScore() {
@@ -140,15 +131,8 @@ function cpuMaxScore() {
         setTimeout(function () {
             Swal.fire({
                 title: 'You Are No Match for This Computer',
-                showClass: {
-                    popup: 'animate__animated animate__fadeInDown'
-                },
-                hideClass: {
-                    popup: 'animate__animated animate__fadeOutUp'
-                },
                 confirmButtonColor: '#3085d6',
                 confirmButtonText: 'Start Again!'
-
             });
         }, 3000);
         gameOverAudio();

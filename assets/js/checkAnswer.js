@@ -16,7 +16,7 @@ function checkAnswer() {
         setTimeout(function () {
             Swal.fire({
                 icon: 'info', title: "DRAW", position: 'center', customClass: 'swal-height', showConfirmButton: false,
-                timer: 1500,
+                timer: 1500
             });
         }, 750);
 
