@@ -10,7 +10,7 @@ The site is responsive across different screen sizes.
 
 https://seanorourke7.github.io/RPSLS/
 
-![screenshot across differant device sizes](assets/images/readme/screenshotRPSLS.png)
+![screenshot across differant device sizes](assets/images/readme/screenshotAmIResponsive.png)
 
 ---
 
