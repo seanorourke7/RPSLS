@@ -214,7 +214,7 @@ When checking Javascript Validator JsHint, I got several errors referencing the 
 
 I also got an error about declaring a 'var' outside a funtion which led me to realise that I had the game start without listening for the DOM to be loaded and the initial code was not written into an enclosed fuction. So I re-wrote the initial code into a function that listens for the DOM to be loaded.
 
-There is an error appearing around using 'template literal syntax' as its not available in versions before 2015 but I left these as I don't have an alternative fix and the issue will only appear on versions before 2015.
+There is an error appearing around using 'template literal syntax' as its not available in versions before 2015 but I left these as I don't have an alternative fix at the moment and the issue will only appear on versions before 2015.
 
 There is an error that the 'Swal' is not defined. I have't fixed this yet.
 
@@ -227,7 +227,7 @@ No bugs were identified in HTML or CSS validators.
 ## Credits
 
 Most of what I learned for this project came from the Love-Maths , and Love-Running projects from code institute.
-I used slack, youtube and other online resources to help with some code specifics.
+I used slack, youtube and other online resources to help with some code queries.
 
 The Alert box code was sourced from SweetAlert2
 
