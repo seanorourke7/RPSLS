@@ -206,7 +206,7 @@ I didn't manage to make an any appointments with my Mentor for this project but 
 
 When I wrote the funtion to check the answer originally it was over 200 lines in length. I had written all permutations into one function. Although it worked fine, I wasn't comfortable with the the length of it so I split it into a 'checkAnswer' function which checked if the user won or if it is a draw and a seperate 'checkLose Function' to check if the CPU won, and split them into 2 seperate js pages away from the main js page so they stand on their own. It was too much code on one page. I would like to reduce the code further still and hope to do so in future.
 
-I had several friends/family test the game and made changes based on their feedback. The biggest changes were to add sounds, to create a winning finish line, ie: first to 10, and to move the selection tiles below the result tiles to make it more visually appealing.
+I had several friends/family test the game and made changes based on their feedback. The biggest changes were to add sounds, to create a winning finish line, ie: first to 5, and to move the selection tiles below the result tiles to make it more visually appealing.
 
 ## Bugs
 
