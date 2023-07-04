@@ -93,6 +93,7 @@ This means I can use it across the site and keep the flow of the site intact.
 ### Imagery
 
 Images used are a selection of hand poses to symbolise rock paper and scissors and cartoon images of a lizard and spock. I chose the images of the hands due to their strong graphic appearance and bright yellow background and then edited the lizard and spock images to have the same yellow colour to make them appear more as a set.
+The hand images were designed by Sacha Jerrems on Dribbble.com.
 
 ### Wireframes
 
@@ -237,7 +238,7 @@ The site was written by me and is for educational purposes only.
 
 ###  Media
 
-All images were edited by me to fit the color scheme and were sourced from google images.
+The hand images were designed by Sacha Jerrems on Dribbble.com ans the spock and lizard images were edited by me to fit the color scheme and were sourced from google images.
 
 ###  Acknowledgments
 
