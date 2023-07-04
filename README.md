@@ -2,7 +2,7 @@
 
 This site is to host a game called Rock Paper Scissors Lizard Spock. This game was made popular by the TV show 'Big Bang theory'.
 
-I built it to demonstrate the abilities i have learned so far, and for course evaluation.
+I built it to demonstrate the abilities I have learned so far, and for course evaluation.
 
 This is a multi page site with links to each page. It contains a Home, Game, How to Play (with video) and Rules Page with text explaining the rules.
 
@@ -58,7 +58,7 @@ First time visitors will be greeted by a clean homepage with clear information.
 
 The header has the name of the game and in the centre are two buttons. 'How to Play' and 'Play Game'.
 
-Both buttons react on hover to invite ineraction.
+Both buttons react on hover to invite interaction.
 
 The 'How to Play' page has a video embedded that explains the rules of the game. Underneath the video is a link "back to the game" which redirects the user to the game. The header links back to the homepage.
 

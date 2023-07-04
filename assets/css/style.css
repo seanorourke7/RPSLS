@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 /*sets the background image, font, and color.*/
-
 body {
     background-image: url(../images/Orion.jpg);
     background-position: center;
@@ -12,7 +11,6 @@ body {
 }
 
 /* sets the styles of the user choice and the game outcome tiles*/
-
 #game-container {
     width: 60%;
     margin: auto;
@@ -35,7 +33,6 @@ body {
 }
 
 /*below sets the images that populate the game buttons*/
-
 #rock {
     background-image: url("../images/fist1.png");
 }
@@ -57,7 +54,6 @@ body {
 }
 
 /*set the styles of the individual icons*/
-
 .icons {
     width: 150px;
     height: 100px;
@@ -105,7 +101,6 @@ body {
 
 #firstToTen {
     font-size: 30px;
-
 }
 
 #rulesButton {
@@ -124,7 +119,6 @@ body {
 }
 
 /*move the youtube clip to the center of the screen*/
-
 .video {
     text-align: center;
 }
@@ -174,7 +168,6 @@ body {
 }
 
 /*changes size for smaller screens*/
-
 @media screen and (max-width: 750px) {
     .icons {
         width: 75px;

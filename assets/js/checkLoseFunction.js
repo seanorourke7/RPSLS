@@ -1,4 +1,3 @@
-
 function checkLose() {
     var userChoice = document.getElementById("result-display").innerHTML;
     var aiChoice = document.getElementById("cpu-display").innerHTML;
@@ -28,7 +27,6 @@ function checkLose() {
             });
         }, 750);
         cpuMaxScore();
-
     }
     else if (userChoice === paper && aiChoice === lizard) {
         setTimeout(function () { losePlay(); }, 700);
@@ -118,5 +116,4 @@ function checkLose() {
         }, 750);
         cpuMaxScore();
     }
-
 }

@@ -16,7 +16,6 @@ function startGame() {
             cpuTile();
             checkAnswer();
         });
-
     }
 }
 

@@ -19,7 +19,6 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
-
     }
     else if (userChoice === rock && aiChoice === lizard) {
         setTimeout(function () { winPlay(); }, 700);
