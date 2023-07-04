@@ -1,4 +1,4 @@
-/*listens for the page to load before starting the game*/
+/*listens for the page to load before starting the game, similar code from the love maths walkthrough*/
 
 document.addEventListener("DOMContentLoaded", function () {
     startGame();
