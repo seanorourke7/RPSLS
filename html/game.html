@@ -11,45 +11,55 @@
 
 <body>
 
-    <h1 class="headerPadding"><a class="headerLogo" href="../index.html">Rock Paper Siccors Lizard Spock</a></h1>
+    <header>
 
-    <div class="gameText">
-        <span>Player Score</span>
-        <span id="playerScore">0</span>
-        <span>Cpu Score</span>
-        <span id="cpuScore">0</span>
-    </div>
+        <h1 class="headerPadding"><a class="headerLogo" href="../index.html">Rock Paper Siccors Lizard Spock</a></h1>
 
-    <!--container for the results to appear-->
+        <div class="gameText">
+            <span>Player Score</span>
+            <span id="playerScore">0</span>
+            <span>Cpu Score</span>
+            <span id="cpuScore">0</span>
+        </div>
 
-    <div id="result-container">
-        <span id="result-display">
-            <button aria-label="player choice placeholder" class="icons" id="playerPlaceholder" type="submit">
-                PLAYER
-            </button>
-        </span>
+    </header>
 
-        <span id="cpu-display">
-            <button aria-label="player choice placeholder" class="icons" id="cpuPlaceholder" type="submit">
-                CPU
-            </button>
-        </span>
-    </div>
 
-    <div class="gameText">
-        <p>Choose Your Weapon</p>
-    </div>
+    <section>
+        <!--container for the results to appear-->
+        <div id="result-container">
+            <span id="result-display">
+                <button aria-label="player choice placeholder" class="icons" id="playerPlaceholder" type="submit">
+                    PLAYER
+                </button>
+            </span>
 
-    <!--container for the game buttons to be selecteed by the player-->
+            <span id="cpu-display">
+                <button aria-label="player choice placeholder" class="icons" id="cpuPlaceholder" type="submit">
+                    CPU
+                </button>
+            </span>
+        </div>
 
-    <div id="game-container">
-        <button onclick="rockPlay()" aria-label="Selects Rock" class="icons" id="rock" type="submit"></button>
-        <button onclick="paperPlay()" aria-label="Selects Paper" class="icons" id="paper" type="submit"></button>
-        <button onclick="scissorsPlay()" aria-label="Selects Scissors" class="icons" id="scissors"
-            type="submit"></button>
-        <button onclick="lizardPlay()" aria-label="Selects Lizard" class="icons" id="lizard" type="submit"></button>
-        <button onclick="spockPlay()" aria-label="Selects Spock" class="icons" id="spock" type="submit"></button>
-    </div>
+        <div class="gameText">
+            <p>Choose Your Weapon</p>
+        </div>
+
+    </section>
+
+    <section>
+        <!--container for the game buttons to be selecteed by the player-->
+
+        <div id="game-container">
+            <button onclick="rockPlay()" aria-label="Selects Rock" class="icons" id="rock" type="submit"></button>
+            <button onclick="paperPlay()" aria-label="Selects Paper" class="icons" id="paper" type="submit"></button>
+            <button onclick="scissorsPlay()" aria-label="Selects Scissors" class="icons" id="scissors"
+                type="submit"></button>
+            <button onclick="lizardPlay()" aria-label="Selects Lizard" class="icons" id="lizard" type="submit"></button>
+            <button onclick="spockPlay()" aria-label="Selects Spock" class="icons" id="spock" type="submit"></button>
+        </div>
+
+    </section>
 
     <div class="gameText">
         <p>The First to Reach a Score of 5 <br> Will be The Ultimate Winner</p>
@@ -78,7 +88,7 @@
     </audio>
 
     <audio id="drawSound">
-        <source src="../assets/audio/Irritating.wav">
+        <source src="../assets/audio/irritating1.wav">
     </audio>
 
     <audio id="winSound">
