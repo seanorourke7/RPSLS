@@ -112,6 +112,8 @@ it congratulates the player and resfreshes the page after 8 seconds.*/
 function playerMaxScore() {
   var playerMAxScore = document.getElementById("playerScore").innerText;
   if (playerMAxScore === "5") {
+    var game = document.getElementById("game-container");
+    game.disabled;
     setTimeout(function () {
       Swal.fire({
         title: "Congratulations! You have beaten the Computer",
