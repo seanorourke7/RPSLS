@@ -45,6 +45,7 @@ function incrementPlayerScore() {
     var oldScore = parseInt(document.getElementById("playerScore").innerText);
     document.getElementById("playerScore").innerText = ++oldScore;
 }
+
 function incrementCpuScore() {
     var oldScore = parseInt(document.getElementById("cpuScore").innerText);
     document.getElementById("cpuScore").innerText = ++oldScore;
@@ -57,13 +58,27 @@ function audioPlay(soundType) {
     audio.play();
 }
 
-
 /*this funtion calculates the current scores, if it has reached 5 for the cpu or the player  
 it congratulates or comisserates the player and resfreshes the page after 8 seconds.*/
+
+
+function disableButtons() {
+    var playerMAxScore = document.getElementById("playerScore").innerText;
+    var cpuMAxScore = document.getElementById("cpuScore").innerText;
+    if (playerMAxScore === "5") {
+        document.getElementById("game-container").disabled = true;
+    }
+
+    else if (cpuMAxScore === "5") {
+        document.getElementById("game-container").disabled = true;
+    }
+}
+
 
 function checkMaxScore() {
     var playerMAxScore = document.getElementById("playerScore").innerText;
     var cpuMAxScore = document.getElementById("cpuScore").innerText;
+
     if (playerMAxScore === "5") {
         setTimeout(function () {
             Swal.fire({
@@ -91,3 +106,4 @@ function checkMaxScore() {
         }, 8000);
     }
 }
+

@@ -12,8 +12,8 @@ function checkAnswer() {
     var spock = '<button class="icons" id="spock" type="submit"></button>';
 
     if (userChoice === rock && aiChoice === lizard) {
-        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         setTimeout(function () {
             Swal.fire({
                 icon: 'success', title: "You Win", text: "Rock Crushes Lizard", position: 'center', customClass: 'swal-height', showConfirmButton: false,
@@ -22,9 +22,10 @@ function checkAnswer() {
         }, 750);
 
     }
+
     else if (userChoice === rock && aiChoice === scissors) {
-        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         setTimeout(function () {
             Swal.fire({
                 icon: 'success', title: "You Win", text: "Rock Crushes Scissors", position: 'center', customClass: 'swal-height', showConfirmButton: false,
@@ -33,9 +34,10 @@ function checkAnswer() {
         }, 750);
 
     }
+
     else if (userChoice === paper && aiChoice === rock) {
-        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         setTimeout(function () {
             Swal.fire({
                 icon: 'success', title: "You Win", text: "Paper Covers Rock", position: 'center', customClass: 'swal-height', showConfirmButton: false,
@@ -44,9 +46,10 @@ function checkAnswer() {
         }, 750);
 
     }
+
     else if (userChoice === paper && aiChoice === spock) {
-        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         setTimeout(function () {
             Swal.fire({
                 icon: 'success', title: "You Win", text: "Paper Disproves Spock", position: 'center', customClass: 'swal-height', showConfirmButton: false,
@@ -55,9 +58,10 @@ function checkAnswer() {
         }, 750);
 
     }
+
     else if (userChoice === scissors && aiChoice === lizard) {
-        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         setTimeout(function () {
             Swal.fire({
                 icon: 'success', title: "You Win", text: "Scissors Stabs Lizard", position: 'center', customClass: 'swal-height', showConfirmButton: false,
@@ -66,9 +70,10 @@ function checkAnswer() {
         }, 750);
 
     }
+
     else if (userChoice === scissors && aiChoice === paper) {
-        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         setTimeout(function () {
             Swal.fire({
                 icon: 'success', title: "You Win", text: "Scissors Cuts Paper", position: 'center', customClass: 'swal-height', showConfirmButton: false,
@@ -77,9 +82,10 @@ function checkAnswer() {
         }, 750);
 
     }
+
     else if (userChoice === lizard && aiChoice === paper) {
-        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         setTimeout(function () {
             Swal.fire({
                 icon: 'success', title: "You Win", text: "Lizard Eats Paper", position: 'center', customClass: 'swal-height', showConfirmButton: false,
@@ -88,9 +94,10 @@ function checkAnswer() {
         }, 750);
 
     }
+
     else if (userChoice === lizard && aiChoice === spock) {
-        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         setTimeout(function () {
             Swal.fire({
                 icon: 'success', title: "You Win", text: "Lizard Poisons Spock", position: 'center', customClass: 'swal-height', showConfirmButton: false,
@@ -99,9 +106,10 @@ function checkAnswer() {
         }, 750);
 
     }
+
     else if (userChoice === spock && aiChoice === rock) {
-        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         setTimeout(function () {
             Swal.fire({
                 icon: 'success', title: "You Win", text: "Spock Vaporises Rock", position: 'center', customClass: 'swal-height', showConfirmButton: false,
@@ -110,9 +118,10 @@ function checkAnswer() {
         }, 750);
 
     }
+
     else if (userChoice === spock && aiChoice === scissors) {
-        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         setTimeout(function () {
             Swal.fire({
                 icon: 'success', title: "You Win", text: "Spock Smashes Scissors", position: 'center', customClass: 'swal-height', showConfirmButton: false,
@@ -131,10 +140,118 @@ function checkAnswer() {
             });
         }, 750);
     }
+    else if (userChoice === rock && aiChoice === paper) {
+        incrementCpuScore();
+        setTimeout(function () { audioPlay('loseSound'); }, 700);
+        setTimeout(function () {
+            Swal.fire({
+                icon: 'error', title: "You Lose", text: "Paper Covers Rock", position: 'center', customClass: 'swal-height', showConfirmButton: false,
+                timer: 1500
+            });
+        }, 1000);
 
-    else {
-        checkLose();
+    }
+
+    else if (userChoice === rock && aiChoice === spock) {
+        incrementCpuScore();
+        setTimeout(function () { audioPlay('loseSound'); }, 700);
+        setTimeout(function () {
+            Swal.fire({
+                icon: 'error', title: "You Lose", text: "Spock Vaporises Rock", position: 'center', customClass: 'swal-height', showConfirmButton: false,
+                timer: 1500
+            });
+        }, 750);
+
+    }
+
+    else if (userChoice === paper && aiChoice === lizard) {
+        incrementCpuScore();
+        setTimeout(function () { audioPlay('loseSound'); }, 700);
+        setTimeout(function () {
+            Swal.fire({
+                icon: 'error', title: "You Lose", text: "Lizard Eats Paper", position: 'center', customClass: 'swal-height', showConfirmButton: false,
+                timer: 1500
+            });
+        }, 750);
+    }
+    else if (userChoice === paper && aiChoice === scissors) {
+        incrementCpuScore();
+        setTimeout(function () { audioPlay('loseSound'); }, 700);
+        setTimeout(function () {
+            Swal.fire({
+                icon: 'error', title: "You Lose", text: "Scissors Cuts Paper", position: 'center', customClass: 'swal-height', showConfirmButton: false,
+                timer: 1500
+            });
+        }, 750);
+    }
+
+    else if (userChoice === scissors && aiChoice === rock) {
+        incrementCpuScore();
+        setTimeout(function () { audioPlay('loseSound'); }, 700);
+        setTimeout(function () {
+            Swal.fire({
+                icon: 'error', title: "You Lose", text: "Rock Crushes Scissors", position: 'center', customClass: 'swal-height', showConfirmButton: false,
+                timer: 1500
+            });
+        }, 750);
+    }
+
+    else if (userChoice === scissors && aiChoice === spock) {
+        incrementCpuScore();
+        setTimeout(function () { audioPlay('loseSound'); }, 700);
+        setTimeout(function () {
+            Swal.fire({
+                icon: 'error', title: "You Lose", text: "Spock Smashes Scissors", position: 'center', customClass: 'swal-height', showConfirmButton: false,
+                timer: 1500
+            });
+        }, 750);
+
+    }
+
+    else if (userChoice === lizard && aiChoice === rock) {
+        incrementCpuScore();
+        setTimeout(function () { audioPlay('loseSound'); }, 700);
+        setTimeout(function () {
+            Swal.fire({
+                icon: 'error', title: "You Lose", text: "Rock Crushes Lizard", position: 'center', customClass: 'swal-height', showConfirmButton: false,
+                timer: 1500
+            });
+        }, 750);
+    }
+
+    else if (userChoice === lizard && aiChoice === scissors) {
+        incrementCpuScore();
+        setTimeout(function () { audioPlay('loseSound'); }, 700);
+        setTimeout(function () {
+            Swal.fire({
+                icon: 'error', title: "You Lose", text: "Scissors Stabs Lizard", position: 'center', customClass: 'swal-height', showConfirmButton: false,
+                timer: 1500
+            });
+        }, 750);
+    }
+
+    else if (userChoice === spock && aiChoice === paper) {
+        incrementCpuScore();
+        setTimeout(function () { audioPlay('loseSound'); }, 700);
+        setTimeout(function () {
+            Swal.fire({
+                icon: 'error', title: "You Lose", text: "Paper Disproves Spock", position: 'center', customClass: 'swal-height', showConfirmButton: false,
+                timer: 1500
+            });
+        }, 750);
+    }
+
+    else if (userChoice === spock && aiChoice === lizard) {
+        incrementCpuScore();
+        setTimeout(function () { audioPlay('loseSound'); }, 700);
+        setTimeout(function () {
+            Swal.fire({
+                icon: 'error', title: "You Lose", text: "Lizard Poisons Spock", position: 'center', customClass: 'swal-height', showConfirmButton: false,
+                timer: 1500
+            });
+        }, 750);
     }
 
     checkMaxScore();
+    disableButtons();
 } 
