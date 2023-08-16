@@ -50,61 +50,13 @@ function incrementCpuScore() {
     document.getElementById("cpuScore").innerText = ++oldScore;
 }
 
-/*funtions to handle sounds of button clicks. */
+/*funtions to handle sounds */
 
-var rockAudio = document.getElementById("rockSound");
-function rockPlay() {
-    rockAudio.play();
+function audioPlay(soundType) {
+    var audio = document.getElementById(soundType);
+    audio.play();
 }
 
-var paperAudio = document.getElementById("paperSound");
-function paperPlay() {
-    paperAudio.play();
-}
-
-var scissorsAudio = document.getElementById("scissorsSound");
-function scissorsPlay() {
-    scissorsAudio.play();
-}
-
-var lizardAudio = document.getElementById("lizardSound");
-function lizardPlay() {
-    lizardAudio.play();
-}
-
-var spockAudio = document.getElementById("spockSound");
-function spockPlay() {
-    spockAudio.play();
-}
-
-/*funtions to handle sounds that alert with WIN/LOSE/DRAW */
-
-var drawAudio = document.getElementById("drawSound");
-function drawPlay() {
-    drawAudio.play();
-}
-
-var winAudio = document.getElementById("winSound");
-function winPlay() {
-    winAudio.play();
-}
-
-var loseAudio = document.getElementById("loseSound");
-function losePlay() {
-    loseAudio.play();
-}
-
-/*function to handle audio when the game reaches 10 wins or losses*/
-
-var gameOverSound = document.getElementById("gameOver");
-function gameOverAudio() {
-    gameOverSound.play();
-}
-
-var gameWinSound = document.getElementById("gameWinner");
-function gameWinAudio() {
-    gameWinSound.play();
-}
 
 /*this funtion calculates the current scores, if it has reached 5 for the cpu or the player  
 it congratulates or comisserates the player and resfreshes the page after 8 seconds.*/
@@ -120,7 +72,7 @@ function checkMaxScore() {
                 confirmButtonText: "Start Again!",
             });
         }, 3000);
-        gameWinAudio();
+        audioPlay('gameWinner');
         setTimeout(function () {
             location.reload();
         }, 8000);
@@ -133,7 +85,7 @@ function checkMaxScore() {
                 confirmButtonText: "Start Again!",
             });
         }, 3000);
-        gameOverAudio();
+        audioPlay('gameOver');
         setTimeout(function () {
             location.reload();
         }, 8000);

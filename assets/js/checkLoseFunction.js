@@ -7,7 +7,6 @@ function checkLose() {
     var lizard = '<button class="icons" id="lizard" type="submit"></button>';
     var spock = '<button class="icons" id="spock" type="submit"></button>';
     if (userChoice === rock && aiChoice === paper) {
-        setTimeout(function () { losePlay(); }, 700);
         incrementCpuScore();
         setTimeout(function () {
             Swal.fire({
@@ -18,7 +17,6 @@ function checkLose() {
 
     }
     else if (userChoice === rock && aiChoice === spock) {
-        setTimeout(function () { losePlay(); }, 700);
         incrementCpuScore();
         setTimeout(function () {
             Swal.fire({
@@ -29,7 +27,6 @@ function checkLose() {
 
     }
     else if (userChoice === paper && aiChoice === lizard) {
-        setTimeout(function () { losePlay(); }, 700);
         incrementCpuScore();
         setTimeout(function () {
             Swal.fire({
@@ -37,10 +34,8 @@ function checkLose() {
                 timer: 1500
             });
         }, 750);
-
     }
     else if (userChoice === paper && aiChoice === scissors) {
-        setTimeout(function () { losePlay(); }, 700);
         incrementCpuScore();
         setTimeout(function () {
             Swal.fire({
@@ -48,10 +43,8 @@ function checkLose() {
                 timer: 1500
             });
         }, 750);
-
     }
     else if (userChoice === scissors && aiChoice === rock) {
-        setTimeout(function () { losePlay(); }, 700);
         incrementCpuScore();
         setTimeout(function () {
             Swal.fire({
@@ -59,10 +52,8 @@ function checkLose() {
                 timer: 1500
             });
         }, 750);
-
     }
     else if (userChoice === scissors && aiChoice === spock) {
-        setTimeout(function () { losePlay(); }, 700);
         incrementCpuScore();
         setTimeout(function () {
             Swal.fire({
@@ -73,7 +64,6 @@ function checkLose() {
 
     }
     else if (userChoice === lizard && aiChoice === rock) {
-        setTimeout(function () { losePlay(); }, 700);
         incrementCpuScore();
         setTimeout(function () {
             Swal.fire({
@@ -81,10 +71,8 @@ function checkLose() {
                 timer: 1500
             });
         }, 750);
-
     }
     else if (userChoice === lizard && aiChoice === scissors) {
-        setTimeout(function () { losePlay(); }, 700);
         incrementCpuScore();
         setTimeout(function () {
             Swal.fire({
@@ -92,10 +80,8 @@ function checkLose() {
                 timer: 1500
             });
         }, 750);
-
     }
     else if (userChoice === spock && aiChoice === paper) {
-        setTimeout(function () { losePlay(); }, 700);
         incrementCpuScore();
         setTimeout(function () {
             Swal.fire({
@@ -103,10 +89,8 @@ function checkLose() {
                 timer: 1500
             });
         }, 750);
-
     }
     else if (userChoice === spock && aiChoice === lizard) {
-        setTimeout(function () { losePlay(); }, 700);
         incrementCpuScore();
         setTimeout(function () {
             Swal.fire({
@@ -114,7 +98,7 @@ function checkLose() {
                 timer: 1500
             });
         }, 750);
-
     }
+    setTimeout(function () { audioPlay('loseSound'); }, 700);
     checkMaxScore();
 } 

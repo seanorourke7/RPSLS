@@ -11,17 +11,8 @@ function checkAnswer() {
     var lizard = '<button class="icons" id="lizard" type="submit"></button>';
     var spock = '<button class="icons" id="spock" type="submit"></button>';
 
-    if (userChoice === aiChoice) {
-        setTimeout(function () { drawPlay(); }, 700);
-        setTimeout(function () {
-            Swal.fire({
-                icon: 'info', title: "DRAW", position: 'center', customClass: 'swal-height', showConfirmButton: false,
-                timer: 1500
-            });
-        }, 750);
-    }
-    else if (userChoice === rock && aiChoice === lizard) {
-        setTimeout(function () { winPlay(); }, 700);
+    if (userChoice === rock && aiChoice === lizard) {
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
         setTimeout(function () {
             Swal.fire({
@@ -32,7 +23,7 @@ function checkAnswer() {
 
     }
     else if (userChoice === rock && aiChoice === scissors) {
-        setTimeout(function () { winPlay(); }, 700);
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
         setTimeout(function () {
             Swal.fire({
@@ -43,7 +34,7 @@ function checkAnswer() {
 
     }
     else if (userChoice === paper && aiChoice === rock) {
-        setTimeout(function () { winPlay(); }, 700);
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
         setTimeout(function () {
             Swal.fire({
@@ -54,7 +45,7 @@ function checkAnswer() {
 
     }
     else if (userChoice === paper && aiChoice === spock) {
-        setTimeout(function () { winPlay(); }, 700);
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
         setTimeout(function () {
             Swal.fire({
@@ -65,7 +56,7 @@ function checkAnswer() {
 
     }
     else if (userChoice === scissors && aiChoice === lizard) {
-        setTimeout(function () { winPlay(); }, 700);
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
         setTimeout(function () {
             Swal.fire({
@@ -76,7 +67,7 @@ function checkAnswer() {
 
     }
     else if (userChoice === scissors && aiChoice === paper) {
-        setTimeout(function () { winPlay(); }, 700);
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
         setTimeout(function () {
             Swal.fire({
@@ -87,7 +78,7 @@ function checkAnswer() {
 
     }
     else if (userChoice === lizard && aiChoice === paper) {
-        setTimeout(function () { winPlay(); }, 700);
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
         setTimeout(function () {
             Swal.fire({
@@ -98,7 +89,7 @@ function checkAnswer() {
 
     }
     else if (userChoice === lizard && aiChoice === spock) {
-        setTimeout(function () { winPlay(); }, 700);
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
         setTimeout(function () {
             Swal.fire({
@@ -109,7 +100,7 @@ function checkAnswer() {
 
     }
     else if (userChoice === spock && aiChoice === rock) {
-        setTimeout(function () { winPlay(); }, 700);
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
         setTimeout(function () {
             Swal.fire({
@@ -120,7 +111,7 @@ function checkAnswer() {
 
     }
     else if (userChoice === spock && aiChoice === scissors) {
-        setTimeout(function () { winPlay(); }, 700);
+        setTimeout(function () { audioPlay('winSound'); }, 700);
         incrementPlayerScore();
         setTimeout(function () {
             Swal.fire({
@@ -130,8 +121,20 @@ function checkAnswer() {
         }, 750);
 
     }
+
+    else if (userChoice === aiChoice) {
+        setTimeout(function () { audioPlay('drawSound'); }, 700);
+        setTimeout(function () {
+            Swal.fire({
+                icon: 'info', title: "DRAW", position: 'center', customClass: 'swal-height', showConfirmButton: false,
+                timer: 1500
+            });
+        }, 750);
+    }
+
     else {
         checkLose();
     }
+
     checkMaxScore();
 } 
