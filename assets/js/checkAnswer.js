@@ -253,5 +253,5 @@ function checkAnswer() {
     }
 
     checkMaxScore();
-    disableButtons();
+
 } 

@@ -59,27 +59,16 @@ function audioPlay(soundType) {
 }
 
 /*this funtion calculates the current scores, if it has reached 5 for the cpu or the player  
-it congratulates or comisserates the player and resfreshes the page after 8 seconds.*/
-
-
-function disableButtons() {
-    var playerMAxScore = document.getElementById("playerScore").innerText;
-    var cpuMAxScore = document.getElementById("cpuScore").innerText;
-    if (playerMAxScore === "5") {
-        document.getElementById("game-container").disabled = true;
-    }
-
-    else if (cpuMAxScore === "5") {
-        document.getElementById("game-container").disabled = true;
-    }
-}
+it congratulates or comisserates the player, removes the buttons and resfreshes the page after 8 seconds.*/
 
 
 function checkMaxScore() {
+
     var playerMAxScore = document.getElementById("playerScore").innerText;
     var cpuMAxScore = document.getElementById("cpuScore").innerText;
 
     if (playerMAxScore === "5") {
+        document.getElementById("game-container").style.display = "none";
         setTimeout(function () {
             Swal.fire({
                 title: "Congratulations! You have beaten the Computer",
@@ -93,6 +82,7 @@ function checkMaxScore() {
         }, 8000);
     }
     if (cpuMAxScore === "5") {
+        document.getElementById("game-container").style.display = "none";
         setTimeout(function () {
             Swal.fire({
                 title: "You Are No Match for This Computer",
@@ -106,4 +96,6 @@ function checkMaxScore() {
         }, 8000);
     }
 }
+
+
 
