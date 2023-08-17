@@ -16,37 +16,30 @@ https://seanorourke7.github.io/RPSLS/
 
 ## CONTENTS
 
-- [User Experience](#user-experience-ux)
-
-  - [User Stories](#user-stories)
-
-- [Design](#design)
-
-  - [Colour Scheme](#colour-scheme)
-  - [Typography](#typography)
-  - [Imagery](#imagery)
-  - [Wireframes](#wireframes)
-
-- [Features](#features)
-
-  - [General Features on Each Page](#general-features-on-each-page)
-  - [Future Implementations](#future-implementations)
-  - [Accessibility](#accessibility)
-
-- [Technologies Used](#technologies-used)
-
-  - [Languages Used](#languages-used)
-
-  - [Deployment](#deployment)
-    - [How to Fork](#how-to-fork)
-    - [How to Clone](#how-to-clone)
-
-- [Testing](#testing)
-
-- [Credits](#credits)
-  - [Content](#content)
-  - [Media](#media)
-  - [Acknowledgments](#acknowledgments)
+- [RPSLS](#rpsls)
+  - [CONTENTS](#contents)
+  - [User Experience (UX)](#user-experience-ux)
+    - [User Stories](#user-stories)
+  - [Design](#design)
+    - [Colour Scheme](#colour-scheme)
+    - [Typography](#typography)
+    - [Imagery](#imagery)
+    - [Wireframes](#wireframes)
+  - [Features](#features)
+    - [General features on each page](#general-features-on-each-page)
+    - [Future Implementations](#future-implementations)
+    - [Accessibility](#accessibility)
+  - [Technologies Used](#technologies-used)
+    - [Languages Used](#languages-used)
+    - [Deployment](#deployment)
+      - [How to Fork](#how-to-fork)
+      - [How to Clone](#how-to-clone)
+  - [Testing](#testing)
+  - [Bugs](#bugs)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+    - [Acknowledgments](#acknowledgments)
 
 ---
 
@@ -205,7 +198,7 @@ Testing was ongoing throughout the entire build. I utilised Chrome developer too
 
 I didn't manage to make an any appointments with my Mentor for this project but I was able to troubleshoot on slack and through general google searches.
 
-When I wrote the funtion to check the answer originally it was over 200 lines in length. I had written all permutations into one function. Although it worked fine, I wasn't comfortable with the the length of it so I split it into a 'checkAnswer' function which checked if the user won or if it is a draw and a seperate 'checkLose Function' to check if the CPU won, and split them into 2 seperate js pages away from the main js page so they stand on their own. It was too much code on one page. I would like to reduce the code further still and hope to do so in future.
+Originally I had the checkanswer function in 1 page that was extremly long. I split it into 2 seperate pages but on feedback from my prject submission I refactored the code to reduce the amount of repetition and put it all back into one page. 
 
 I had several friends/family test the game and made changes based on their feedback. The biggest changes were to add sounds, to create a winning finish line, ie: first to 5, and to move the selection tiles below the result tiles to make it more visually appealing.
 
@@ -220,6 +213,8 @@ There is an error appearing around using 'template literal syntax' as its not av
 There is an error that the 'Swal' is not defined. I have't fixed this yet.
 
 No bugs were identified in HTML or CSS validators.
+
+![JSHint](assets/images/readme/jshint.png.png)
 
 ![Jigsaw](/assets/images/readme/cssValid.png)
 
@@ -236,11 +231,11 @@ The Alert box code was sourced from SweetAlert2
 
 The site was written by me and is for educational purposes only.
 
-###  Media
+### Media
 
 The hand images were designed by Sacha Jerrems on Dribbble.com ans the spock and lizard images were edited by me to fit the color scheme and were sourced from google images.
 
-###  Acknowledgments
+### Acknowledgments
 
 I didn't have a chance to have a mentor session for this project but I did manage to get on a couple of the weekly meetups on slack which helps to motivate and keep me working through any issues.
 The readme template was used from code insitute.

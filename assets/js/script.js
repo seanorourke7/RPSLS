@@ -25,13 +25,14 @@ It will then be compared with the CPU choice .*/
 function userSelection(selectedIcon) {
     document.getElementById(
         "result-display"
-    ).innerHTML = `<button class="icons" id=${selectedIcon} type="submit"></button>`;
+    ).innerHTML = `<button class="icons" id=${selectedIcon} type="submit" disabled = "disabled"></button>`;
+
 }
 
 // This will generate a random choice for the CPU
 
 function cpuTile() {
-    var tileArray = ["rock", "paper", "scissors", "lizard", "spock"];
+    var tileArray = ["rockBtn", "paperBtn", "scissorsBtn", "lizardBtn", "spockBtn"];
     var ranNumber = Math.floor(Math.random() * 5);
     var cpuChoice = tileArray[ranNumber];
     document.getElementById(
@@ -96,6 +97,4 @@ function checkMaxScore() {
         }, 8000);
     }
 }
-
-
 
