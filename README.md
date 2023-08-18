@@ -219,7 +219,7 @@ There is an error that the 'Swal' is not defined. I have't fixed this yet.
 
 No bugs were identified in HTML or CSS validators.
 
-![JSHint](/assets/images/readme/jshint.png.png)
+![JSHint](/assets/images/readme/jshint.png)
 
 ![Jigsaw](/assets/images/readme/cssValid.png)
 
