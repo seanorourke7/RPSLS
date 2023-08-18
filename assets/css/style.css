@@ -33,23 +33,23 @@ body {
 }
 
 /*below sets the images that populate the game buttons*/
-#rockBtn {
+#rock {
     background-image: url("../images/fist1.png");
 }
 
-#paperBtn {
+#paper {
     background-image: url("../images/paper2.png");
 }
 
-#scissorsBtn {
+#scissors {
     background-image: url("../images/scissors1.png")
 }
 
-#lizardBtn {
+#lizard {
     background-image: url("../images/lizard5.png")
 }
 
-#spockBtn {
+#spock {
     background-image: url("../images/spock.png")
 }
 

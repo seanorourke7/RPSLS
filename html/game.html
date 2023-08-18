@@ -41,7 +41,7 @@
             </span>
         </div>
 
-        <div class="gameText">
+        <div class="gameText" id="weapon-text">
             <p>Choose Your Weapon</p>
         </div>
 
@@ -52,21 +52,21 @@
         <!--container for the game buttons to be selecteed by the player-->
 
         <div id="game-container">
-            <button onclick="audioPlay('rockSound')" aria-label="Selects Rock" class="icons" id="rockBtn"
+            <button onclick="audioPlay('rockSound')" aria-label="Selects Rock" class="icons" id="rock"
                 type="submit"></button>
-            <button onclick="audioPlay('paperSound')" aria-label="Selects Paper" class="icons" id="paperBtn"
+            <button onclick="audioPlay('paperSound')" aria-label="Selects Paper" class="icons" id="paper"
                 type="submit"></button>
-            <button onclick="audioPlay('scissorsSound')" aria-label="Selects Scissors" class="icons" id="scissorsBtn"
+            <button onclick="audioPlay('scissorsSound')" aria-label="Selects Scissors" class="icons" id="scissors"
                 type="submit"></button>
-            <button onclick="audioPlay('lizardSound')" aria-label="Selects Lizard" class="icons" id="lizardBtn"
+            <button onclick="audioPlay('lizardSound')" aria-label="Selects Lizard" class="icons" id="lizard"
                 type="submit"></button>
-            <button onclick="audioPlay('spockSound')" aria-label="Selects Spock" class="icons" id="spockBtn"
+            <button onclick="audioPlay('spockSound')" aria-label="Selects Spock" class="icons" id="spock"
                 type="submit"></button>
         </div>
 
     </section>
 
-    <div class="gameText">
+    <div class="gameText" id = "game-rules">
         <p>The First to Reach a Score of 5 <br> Will be The Ultimate Winner</p>
     </div>
 
@@ -113,7 +113,6 @@
     </audio>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../assets/js/checkLoseFunction.js"></script>
     <script src="../assets/js/checkAnswer.js"></script>
     <script src="../assets/js/script.js"></script>
 </body>

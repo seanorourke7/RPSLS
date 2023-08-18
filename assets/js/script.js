@@ -1,5 +1,4 @@
 /*listens for the page to load before starting the game, similar code from the love maths walkthrough*/
-
 document.addEventListener("DOMContentLoaded", function () {
     startGame();
 });
@@ -25,14 +24,13 @@ It will then be compared with the CPU choice .*/
 function userSelection(selectedIcon) {
     document.getElementById(
         "result-display"
-    ).innerHTML = `<button class="icons" id=${selectedIcon} type="submit" disabled = "disabled"></button>`;
-
+    ).innerHTML = `<button class="icons" id=${selectedIcon} type="submit"></button>`;
 }
 
 // This will generate a random choice for the CPU
 
 function cpuTile() {
-    var tileArray = ["rockBtn", "paperBtn", "scissorsBtn", "lizardBtn", "spockBtn"];
+    var tileArray = ["rock", "paper", "scissors", "lizard", "spock"];
     var ranNumber = Math.floor(Math.random() * 5);
     var cpuChoice = tileArray[ranNumber];
     document.getElementById(
@@ -62,7 +60,6 @@ function audioPlay(soundType) {
 /*this funtion calculates the current scores, if it has reached 5 for the cpu or the player  
 it congratulates or comisserates the player, removes the buttons and resfreshes the page after 8 seconds.*/
 
-
 function checkMaxScore() {
 
     var playerMAxScore = document.getElementById("playerScore").innerText;
@@ -70,6 +67,8 @@ function checkMaxScore() {
 
     if (playerMAxScore === "5") {
         document.getElementById("game-container").style.display = "none";
+        document.getElementById("game-rules").style.display = "none";
+        document.getElementById("weapon-text").style.display = "none";
         setTimeout(function () {
             Swal.fire({
                 title: "Congratulations! You have beaten the Computer",
@@ -84,6 +83,8 @@ function checkMaxScore() {
     }
     if (cpuMAxScore === "5") {
         document.getElementById("game-container").style.display = "none";
+        document.getElementById("game-rules").style.display = "none";
+        document.getElementById("weapon-text").style.display = "none";
         setTimeout(function () {
             Swal.fire({
                 title: "You Are No Match for This Computer",

@@ -5,12 +5,11 @@ The code for the alert boxes were sourced from https://sweetalert2.github.io */
 function checkAnswer() {
     var userChoice = document.getElementById("result-display").innerHTML;
     var aiChoice = document.getElementById("cpu-display").innerHTML;
-    var rock = '<button class="icons" id="rockBtn" type="submit"></button>';
-    var paper = '<button class="icons" id="paperBtn" type="submit"></button>';
-    var scissors = '<button class="icons" id="scissorsBtn" type="submit"></button>';
-    var lizard = '<button class="icons" id="lizardBtn" type="submit"></button>';
-    var spock = '<button class="icons" id="spockBtn" type="submit"></button>';
-
+    var rock = '<button class="icons" id="rock" type="submit"></button>';
+    var paper = '<button class="icons" id="paper" type="submit"></button>';
+    var scissors = '<button class="icons" id="scissors" type="submit"></button>';
+    var lizard = '<button class="icons" id="lizard" type="submit"></button>';
+    var spock = '<button class="icons" id="spock" type="submit"></button>';
     if (userChoice === rock && aiChoice === lizard) {
         incrementPlayerScore();
         setTimeout(function () { audioPlay('winSound'); }, 700);
@@ -20,7 +19,6 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
-
     }
 
     else if (userChoice === rock && aiChoice === scissors) {
@@ -32,7 +30,6 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
-
     }
 
     else if (userChoice === paper && aiChoice === rock) {
@@ -44,7 +41,6 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
-
     }
 
     else if (userChoice === paper && aiChoice === spock) {
@@ -56,8 +52,8 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
-
     }
+
 
     else if (userChoice === scissors && aiChoice === lizard) {
         incrementPlayerScore();
@@ -68,7 +64,6 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
-
     }
 
     else if (userChoice === scissors && aiChoice === paper) {
@@ -80,7 +75,6 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
-
     }
 
     else if (userChoice === lizard && aiChoice === paper) {
@@ -92,7 +86,6 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
-
     }
 
     else if (userChoice === lizard && aiChoice === spock) {
@@ -104,7 +97,6 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
-
     }
 
     else if (userChoice === spock && aiChoice === rock) {
@@ -116,7 +108,6 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
-
     }
 
     else if (userChoice === spock && aiChoice === scissors) {
@@ -128,7 +119,6 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
-
     }
 
     else if (userChoice === aiChoice) {
@@ -140,6 +130,7 @@ function checkAnswer() {
             });
         }, 750);
     }
+
     else if (userChoice === rock && aiChoice === paper) {
         incrementCpuScore();
         setTimeout(function () { audioPlay('loseSound'); }, 700);
@@ -149,7 +140,6 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 1000);
-
     }
 
     else if (userChoice === rock && aiChoice === spock) {
@@ -161,7 +151,6 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
-
     }
 
     else if (userChoice === paper && aiChoice === lizard) {
@@ -174,6 +163,7 @@ function checkAnswer() {
             });
         }, 750);
     }
+
     else if (userChoice === paper && aiChoice === scissors) {
         incrementCpuScore();
         setTimeout(function () { audioPlay('loseSound'); }, 700);
@@ -205,7 +195,6 @@ function checkAnswer() {
                 timer: 1500
             });
         }, 750);
-
     }
 
     else if (userChoice === lizard && aiChoice === rock) {
