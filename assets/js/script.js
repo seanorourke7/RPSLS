@@ -73,7 +73,7 @@ function checkMaxScore() {
             Swal.fire({
                 title: "Congratulations! You have beaten the Computer",
                 confirmButtonColor: "#3085d6",
-                confirmButtonText: "Start Again!",
+                confirmButtonText: '<a href="../game.html">Start Again!</a>',
             });
         }, 3000);
         audioPlay('gameWinner');
@@ -89,7 +89,7 @@ function checkMaxScore() {
             Swal.fire({
                 title: "You Are No Match for This Computer",
                 confirmButtonColor: "#3085d6",
-                confirmButtonText: "Start Again!",
+                confirmButtonText: '<a href="../game.html">Start Again!</a>',
             });
         }, 3000);
         audioPlay('gameOver');
