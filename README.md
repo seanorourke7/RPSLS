@@ -204,6 +204,11 @@ I had several friends/family test the game and made changes based on their feedb
 
 ## Bugs
 
+When the game reaches a score of 5 the user was able to continue to select buttons until the page timed out. This was picked up in the assessment feedback and so I changed it.
+Now when a score of 5 is reached the game area where the buttons are located is hidden. It was suggested to disable the buttons however I decided to hide them as it's more aesthetically pleasing.
+
+It was suggested in the assesment feedback to move the game area into sections but when I did this the W3C validator gave warnings for not having headers in my sections so I left them as DIV's.
+
 When checking Javascript Validator JsHint, I got several errors referencing the use of 'let' to declare a variable. I changed these to 'var'.
 
 I also got an error about declaring a 'var' outside a funtion which led me to realise that I had the game start without listening for the DOM to be loaded and the initial code was not written into an enclosed fuction. So I re-wrote the initial code into a function that listens for the DOM to be loaded.
