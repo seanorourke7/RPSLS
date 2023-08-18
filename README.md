@@ -205,7 +205,7 @@ I had several friends/family test the game and made changes based on their feedb
 ## Bugs
 
 When the game reaches a score of 5 the user was able to continue to select buttons until the page timed out. This was picked up in the assessment feedback and so I changed it.
-Now when a score of 5 is reached the game area where the buttons are located is hidden. It was suggested to disable the buttons however I decided to hide them as it's more aesthetically pleasing.
+Now when a score of 5 is reached the game area where the buttons are located is hidden until the game refreshes. This removes the bug of being able to continue selecting buttons and also looks better as a result.
 
 It was suggested in the assesment feedback to move the game area into sections but when I did this the W3C validator gave warnings for not having headers in my sections so I left them as DIV's.
 
