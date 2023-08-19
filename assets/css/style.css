@@ -2,7 +2,7 @@
 
 /*sets the background image, font, and color.*/
 body {
-    background-image: url(../images/Orion.jpg);
+    background-image: url(../images/orion.jpg);
     background-position: center;
     background-repeat: repeat-y;
     font-family: Righteous, sans-serif;
@@ -33,23 +33,23 @@ body {
 }
 
 /*below sets the images that populate the game buttons*/
-#rock {
+#rockBtn {
     background-image: url("../images/fist1.png");
 }
 
-#paper {
+#paperBtn {
     background-image: url("../images/paper2.png");
 }
 
-#scissors {
+#scissorsBtn {
     background-image: url("../images/scissors1.png")
 }
 
-#lizard {
+#lizardBtn {
     background-image: url("../images/lizard5.png")
 }
 
-#spock {
+#spockBtn {
     background-image: url("../images/spock.png")
 }
 

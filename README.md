@@ -10,7 +10,7 @@ The site is responsive across different screen sizes.
 
 https://seanorourke7.github.io/RPSLS/
 
-![screenshot across differant device sizes](assets/images/readme/screenshotAmIResponsive.png)
+![screenshot across differant device sizes](assets/images/readme/screenshot-am-i-responsive.png)
 
 ---
 
@@ -81,7 +81,7 @@ I've used Righteous font as it is easy to read while also retaining a sci-fi loo
 
 This means I can use it across the site and keep the flow of the site intact.
 
-![font type](/assets/images/readme/fontRPSLS.png)
+![font type](/assets/images/readme/fon-rpsls.png)
 
 ### Imagery
 
@@ -99,30 +99,30 @@ The structure changed as I went through the process of developing the game as I 
 
 This site contains a home page with 2 buttons directing the user to the game or to instructions.
 
-![Homepage destop](/assets/images/readme/desktopHome.png)
+![Homepage destop](/assets/images/readme/desktop-home.png)
 
-![Homepage mobile](/assets/images/readme/mobileHome.png)
+![Homepage mobile](/assets/images/readme/mobile-home.png)
 
 A game page that hosts the game.
 
-![Game destop](/assets/images/readme/desktopGame.png)
+![Game destop](/assets/images/readme/desktop-game.png)
 
-![Game mobile](/assets/images/readme/mobileGame.png)
+![Game mobile](/assets/images/readme/mobile-game.png)
 
 A How to Play page with a video embedded that explains the rules.
 
-![HowToPlay destop](/assets/images/readme/desktopHowtoplay.png)
+![HowToPlay destop](/assets/images/readme/desktop-how-to-play.png)
 
 A Rules page with text explaining the rules.
 
-![How to play desktop](/assets/images/readme/textInstructions.png)
+![How to play desktop](/assets/images/readme/text-instructions.png)
 
 ### General features on each page
 
 There is a header that is consitant across the site and in the 'Game' and 'How to Play' pages it contains a link back to the home page.
 
 ![Header](/assets/images/readme/header.png)
-![Header](/assets/images/readme/headerOnhover.png)
+![Header](/assets/images/readme/header-on-hover.png)
 
 ### Future Implementations
 
@@ -221,9 +221,9 @@ No bugs were identified in HTML or CSS validators.
 
 ![JSHint](/assets/images/readme/jshint.png)
 
-![Jigsaw](/assets/images/readme/cssValid.png)
+![Jigsaw](/assets/images/readme/css-valid.png)
 
-![W3C](assets/images/readme/htmlValid.png)
+![W3C](assets/images/readme/htmlvalid.png)
 
 ## Credits
 

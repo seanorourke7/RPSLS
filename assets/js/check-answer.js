@@ -5,11 +5,12 @@ The code for the alert boxes were sourced from https://sweetalert2.github.io */
 function checkAnswer() {
     var userChoice = document.getElementById("result-display").innerHTML;
     var aiChoice = document.getElementById("cpu-display").innerHTML;
-    var rock = '<button class="icons" id="rock" type="submit"></button>';
-    var paper = '<button class="icons" id="paper" type="submit"></button>';
-    var scissors = '<button class="icons" id="scissors" type="submit"></button>';
-    var lizard = '<button class="icons" id="lizard" type="submit"></button>';
-    var spock = '<button class="icons" id="spock" type="submit"></button>';
+    var rock = '<button class="icons" id="rockBtn" type="submit"></button>';
+    var paper = '<button class="icons" id="paperBtn" type="submit"></button>';
+    var scissors = '<button class="icons" id="scissorsBtn" type="submit"></button>';
+    var lizard = '<button class="icons" id="lizardBtn" type="submit"></button>';
+    var spock = '<button class="icons" id="spockBtn" type="submit"></button>';
+
     if (userChoice === rock && aiChoice === lizard) {
         incrementPlayerScore();
         setTimeout(function () { audioPlay('winSound'); }, 700);
