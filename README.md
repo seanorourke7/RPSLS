@@ -81,7 +81,7 @@ I've used Righteous font as it is easy to read while also retaining a sci-fi loo
 
 This means I can use it across the site and keep the flow of the site intact.
 
-![font type](/assets/images/readme/fon-rpsls.png)
+![font type](/assets/images/readme/font-rpsls.png)
 
 ### Imagery
 
@@ -223,7 +223,7 @@ No bugs were identified in HTML or CSS validators.
 
 ![Jigsaw](/assets/images/readme/css-valid.png)
 
-![W3C](assets/images/readme/htmlvalid.png)
+![W3C](assets/images/readme/html-valid.png)
 
 ## Credits
 
